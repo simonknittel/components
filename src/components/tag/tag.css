@@ -1,0 +1,12 @@
+:host {
+  padding: .4rem .5rem .3rem .5rem;
+  border-radius: .25rem;
+  border-width: 1px;
+  border-style: solid;
+}
+
+:host::before {
+  content: '#';
+  opacity: .5;
+  margin-right: .25em;
+}
