@@ -19,10 +19,19 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "storybook": "start-storybook -p 6006 -s www",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@stencil/core": "^1.8.4"
+    "@babel/core": "^7.8.4",
+    "@stencil/core": "^1.8.4",
+    "@storybook/web-components": "^5.3.13",
+    "babel-loader": "^8.0.6"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@storybook/addon-docs": "^5.3.13",
+    "lit-html": "^1.1.2"
+  }
 }
