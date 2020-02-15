@@ -16,22 +16,15 @@
   ],
   "scripts": {
     "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "start": "stencil build --dev --docs --watch",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate",
-    "storybook": "start-storybook -p 6006 -s www",
-    "build-storybook": "build-storybook"
+    "generate": "stencil generate"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@stencil/core": "^1.8.4",
-    "@storybook/web-components": "^5.3.13",
-    "babel-loader": "^8.0.6"
+    "@stencil/sass": "^1.1.1"
   },
-  "license": "MIT",
-  "dependencies": {
-    "@storybook/addon-docs": "^5.3.13",
-    "lit-html": "^1.1.2"
-  }
+  "license": "MIT"
 }

@@ -2,7 +2,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'sk-tag-list',
-  styleUrl: 'tag-list.css',
+  styleUrl: 'tag-list.scss',
   shadow: true
 })
 export class TagList {

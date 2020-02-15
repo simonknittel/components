@@ -3,17 +3,21 @@
 import {
   configure,
   addParameters,
-  // setCustomElements,
+  setCustomElements,
 } from '@storybook/web-components';
 
-// import customElements from '../dist/custom-elements.json';
+import customElements from '../../stencil/dist/custom-elements.json';
 
-// setCustomElements(customElements);
+setCustomElements(customElements);
 
 addParameters({
   docs: {
     iframeHeight: '200px',
   },
+  backgrounds: [
+    { name: 'yellow', value: '#fc0', default: true },
+    { name: 'black', value: '#000' },
+  ],
 });
 
 // force full reload to not reregister web components
