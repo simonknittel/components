@@ -1,7 +1,7 @@
 import { withKnobs, text } from "@storybook/addon-knobs";
 
 export default {
-  title: 'Tag Lust',
+  title: 'sk-tag-list',
   component: 'sk-tag-list',
   decorators: [withKnobs],
 }

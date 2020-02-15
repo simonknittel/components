@@ -5,14 +5,12 @@
   border-width: 1px;
   border-style: solid;
 
+  border-color: var(--border-color, rgba(#000, .5));
+  color: var(--color, #000);
+
   &::before {
     content: '#';
     opacity: .5;
     margin-right: .25em;
-  }
-
-  .inverted {
-    border-color: rgba(#fc0, .5);
-    color: #fc0;
   }
 }

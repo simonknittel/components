@@ -7,16 +7,10 @@ import { Component, Host, h, Prop } from '@stencil/core';
 })
 export class Tag {
   @Prop() text: string
-  @Prop() inverted: boolean
 
   render() {
     return (
-      <Host
-        class={{
-          "sk-tag": true,
-          "inverted": this.inverted === true
-        }}
-      >
+      <Host className="sk-tag">
         {this.text}
       </Host>
     )

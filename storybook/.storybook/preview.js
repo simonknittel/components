@@ -14,10 +14,6 @@ addParameters({
   docs: {
     iframeHeight: '200px',
   },
-  backgrounds: [
-    { name: 'yellow', value: '#fc0', default: true },
-    { name: 'black', value: '#000' },
-  ],
 });
 
 // force full reload to not reregister web components

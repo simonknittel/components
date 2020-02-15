@@ -7,10 +7,9 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type      | Default     |
-| ---------- | ---------- | ----------- | --------- | ----------- |
-| `inverted` | `inverted` |             | `boolean` | `undefined` |
-| `text`     | `text`     |             | `string`  | `undefined` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `text`   | `text`    |             | `string` | `undefined` |
 
 
 ## Dependencies

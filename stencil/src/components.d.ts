@@ -11,7 +11,6 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface SkTag {
-    'inverted': boolean;
     'text': string;
   }
   interface SkTagList {
@@ -41,7 +40,6 @@ declare global {
 
 declare namespace LocalJSX {
   interface SkTag {
-    'inverted'?: boolean;
     'text'?: string;
   }
   interface SkTagList {
