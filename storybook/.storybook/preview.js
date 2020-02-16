@@ -6,7 +6,7 @@ import {
   setCustomElements,
 } from '@storybook/web-components';
 
-import customElements from '../../stencil/dist/custom-elements.json';
+import customElements from '../../stencil/custom-elements.json';
 
 setCustomElements(customElements);
 

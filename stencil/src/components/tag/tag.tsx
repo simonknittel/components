@@ -11,7 +11,7 @@ export class Tag {
   render() {
     return (
       <Host className="sk-tag">
-        {this.text}
+        <sk-typography>{this.text}</sk-typography>
       </Host>
     )
   }

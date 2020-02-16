@@ -1,0 +1,55 @@
+{
+  "tags": [
+    {
+      "name": "sk-social-link",
+      "properties": [
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "iconAddBackground",
+          "type": "boolean"
+        },
+        {
+          "name": "iconViewbox",
+          "type": "string"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "sk-tag",
+      "properties": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "sk-tag-list",
+      "properties": [
+        {
+          "name": "items",
+          "type": "string[]"
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "sk-typography",
+      "properties": [],
+      "events": []
+    }
+  ]
+}

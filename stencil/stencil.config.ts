@@ -38,7 +38,7 @@ export const config: Config = {
           })
         }
 
-        fs.writeFileSync('./dist/custom-elements.json', JSON.stringify(customElements, undefined, 2))
+        fs.writeFileSync('./custom-elements.json', JSON.stringify(customElements, undefined, 2))
       }
     }
   ],

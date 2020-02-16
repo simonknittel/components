@@ -18,14 +18,15 @@ export class SocialLink {
       <a href={this.url} target="_blank" rel="noopener">
         <span class={{
           icon: true,
-          'icon--add-background': this.iconAddBackground
+          'icon--add-background': this.iconAddBackground,
+          'icon--patreon': this.icon === 'patreon'
         }}>
           <svg viewBox={"0 0 " + this.iconViewbox}>
             <use xlinkHref={getAssetPath(`./assets/${this.icon}-brands.svg`) + '#id'} />
           </svg>
         </span>
 
-        {this.text}
+        <sk-typography>{this.text}</sk-typography>
       </a>
     );
   }

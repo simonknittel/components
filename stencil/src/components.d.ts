@@ -23,6 +23,7 @@ export namespace Components {
   interface SkTagList {
     'items': Array<string>;
   }
+  interface SkTypography {}
 }
 
 declare global {
@@ -45,10 +46,17 @@ declare global {
     prototype: HTMLSkTagListElement;
     new (): HTMLSkTagListElement;
   };
+
+  interface HTMLSkTypographyElement extends Components.SkTypography, HTMLStencilElement {}
+  var HTMLSkTypographyElement: {
+    prototype: HTMLSkTypographyElement;
+    new (): HTMLSkTypographyElement;
+  };
   interface HTMLElementTagNameMap {
     'sk-social-link': HTMLSkSocialLinkElement;
     'sk-tag': HTMLSkTagElement;
     'sk-tag-list': HTMLSkTagListElement;
+    'sk-typography': HTMLSkTypographyElement;
   }
 }
 
@@ -66,11 +74,13 @@ declare namespace LocalJSX {
   interface SkTagList {
     'items'?: Array<string>;
   }
+  interface SkTypography {}
 
   interface IntrinsicElements {
     'sk-social-link': SkSocialLink;
     'sk-tag': SkTag;
     'sk-tag-list': SkTagList;
+    'sk-typography': SkTypography;
   }
 }
 
@@ -83,6 +93,7 @@ declare module "@stencil/core" {
       'sk-social-link': LocalJSX.SkSocialLink & JSXBase.HTMLAttributes<HTMLSkSocialLinkElement>;
       'sk-tag': LocalJSX.SkTag & JSXBase.HTMLAttributes<HTMLSkTagElement>;
       'sk-tag-list': LocalJSX.SkTagList & JSXBase.HTMLAttributes<HTMLSkTagListElement>;
+      'sk-typography': LocalJSX.SkTypography & JSXBase.HTMLAttributes<HTMLSkTypographyElement>;
     }
   }
 }

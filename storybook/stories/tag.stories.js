@@ -9,7 +9,6 @@ export default {
 export const onYellow = () => {
   const el = document.createElement('sk-tag')
   el.text = text('Text', 'Lorem ipsum')
-  el.style = '--border-color: rgba(#000, .5); color: #000'
   return el
 }
 
@@ -24,7 +23,7 @@ onYellow.story = {
 export const onBlack = () => {
   const el = document.createElement('sk-tag')
   el.text = text('Text', 'Lorem ipsum')
-  el.style = '--border-color: rgba(#fc0, .5); color: #fc0'
+  el.style = '--sk-tag-border-color: rgba(#fc0, .5); --sk-tag-color: #fc0'
   return el
 }
 

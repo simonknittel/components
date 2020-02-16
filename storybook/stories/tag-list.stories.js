@@ -1,4 +1,4 @@
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { withKnobs, array } from "@storybook/addon-knobs";
 
 export default {
   title: 'sk-tag-list',
@@ -8,6 +8,6 @@ export default {
 
 export const defaultView = (foo) => {
   const el = document.createElement('sk-tag-list')
-  el.items = text('Items', 'Lorem ipsum, Dolor sit amet').split(',')
+  el.items = array('Items', ['Lorem ipsum', 'Dolor sit amet'])
   return el
 }

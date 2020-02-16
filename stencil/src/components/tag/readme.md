@@ -18,9 +18,14 @@
 
  - [sk-tag-list](../tag-list)
 
+### Depends on
+
+- [sk-typography](../typography)
+
 ### Graph
 ```mermaid
 graph TD;
+  sk-tag --> sk-typography
   sk-tag-list --> sk-tag
   style sk-tag fill:#f9f,stroke:#333,stroke-width:4px
 ```
