@@ -22,9 +22,9 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@stencil/core": "^1.8.4",
-    "@stencil/sass": "^1.1.1"
+    "@babel/core": "7.8.4",
+    "@stencil/core": "1.8.4",
+    "@stencil/sass": "1.1.1"
   },
   "license": "MIT",
   "repository": {

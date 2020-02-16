@@ -1,0 +1,43 @@
+a {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #fc0;
+  border-radius: .25rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #fc0;
+    color: #000;
+
+    .icon {
+      &--add-background {
+        background-color: #000;
+        color: #fc0;
+      }
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: .5rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &--add-background {
+    padding: .25rem;
+    border-radius: .2rem;
+    background-color: #fc0;
+    color: #000;
+  }
+
+  &--patreon {
+    padding: .35rem;
+  }
+}

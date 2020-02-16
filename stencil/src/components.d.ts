@@ -10,6 +10,13 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface SkSocialLink {
+    'icon': string;
+    'iconAddBackground': boolean;
+    'iconViewbox': string;
+    'text': string;
+    'url': string;
+  }
   interface SkTag {
     'text': string;
   }
@@ -20,6 +27,12 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLSkSocialLinkElement extends Components.SkSocialLink, HTMLStencilElement {}
+  var HTMLSkSocialLinkElement: {
+    prototype: HTMLSkSocialLinkElement;
+    new (): HTMLSkSocialLinkElement;
+  };
 
   interface HTMLSkTagElement extends Components.SkTag, HTMLStencilElement {}
   var HTMLSkTagElement: {
@@ -33,12 +46,20 @@ declare global {
     new (): HTMLSkTagListElement;
   };
   interface HTMLElementTagNameMap {
+    'sk-social-link': HTMLSkSocialLinkElement;
     'sk-tag': HTMLSkTagElement;
     'sk-tag-list': HTMLSkTagListElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface SkSocialLink {
+    'icon'?: string;
+    'iconAddBackground'?: boolean;
+    'iconViewbox'?: string;
+    'text'?: string;
+    'url'?: string;
+  }
   interface SkTag {
     'text'?: string;
   }
@@ -47,6 +68,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'sk-social-link': SkSocialLink;
     'sk-tag': SkTag;
     'sk-tag-list': SkTagList;
   }
@@ -58,6 +80,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'sk-social-link': LocalJSX.SkSocialLink & JSXBase.HTMLAttributes<HTMLSkSocialLinkElement>;
       'sk-tag': LocalJSX.SkTag & JSXBase.HTMLAttributes<HTMLSkTagElement>;
       'sk-tag-list': LocalJSX.SkTagList & JSXBase.HTMLAttributes<HTMLSkTagListElement>;
     }
