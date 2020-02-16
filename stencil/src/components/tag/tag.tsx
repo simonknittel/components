@@ -10,7 +10,7 @@ export class Tag {
 
   render() {
     return (
-      <Host className="sk-tag">
+      <Host>
         <sk-typography>{this.text}</sk-typography>
       </Host>
     )

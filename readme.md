@@ -11,8 +11,6 @@ cd stencil
 npm start
 ```
 
-⚠ Sometimes needs to be run twice in order to generate the custom-elements.json for Storybook
-
 ## Build, watch and serve stories
 ```
 cd storybook
