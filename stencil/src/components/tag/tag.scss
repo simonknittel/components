@@ -5,8 +5,8 @@
   border-width: 1px;
   border-style: solid;
 
-  border-color: var(--border-color, rgba(#000, .5));
-  color: var(--color, #000);
+  border-color: var(--sk-tag-border-color, rgba(#000, .5));
+  color: var(--sk-tag-color, #000);
 
   &::before {
     content: '#';
