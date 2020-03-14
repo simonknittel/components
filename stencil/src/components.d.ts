@@ -12,8 +12,6 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface SkSocialLink {
     'icon': string;
-    'iconAddBackground': boolean;
-    'iconViewbox': string;
     'text': string;
     'url': string;
   }
@@ -63,8 +61,6 @@ declare global {
 declare namespace LocalJSX {
   interface SkSocialLink {
     'icon'?: string;
-    'iconAddBackground'?: boolean;
-    'iconViewbox'?: string;
     'text'?: string;
     'url'?: string;
   }

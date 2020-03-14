@@ -7,13 +7,11 @@
 
 ## Properties
 
-| Property            | Attribute             | Description | Type      | Default     |
-| ------------------- | --------------------- | ----------- | --------- | ----------- |
-| `icon`              | `icon`                |             | `string`  | `undefined` |
-| `iconAddBackground` | `icon-add-background` |             | `boolean` | `undefined` |
-| `iconViewbox`       | `icon-viewbox`        |             | `string`  | `undefined` |
-| `text`              | `text`                |             | `string`  | `undefined` |
-| `url`               | `url`                 |             | `string`  | `undefined` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `icon`   | `icon`    |             | `string` | `undefined` |
+| `text`   | `text`    |             | `string` | `undefined` |
+| `url`    | `url`     |             | `string` | `undefined` |
 
 
 ## Dependencies

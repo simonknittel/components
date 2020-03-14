@@ -8,14 +8,6 @@
           "type": "string"
         },
         {
-          "name": "iconAddBackground",
-          "type": "boolean"
-        },
-        {
-          "name": "iconViewbox",
-          "type": "string"
-        },
-        {
           "name": "text",
           "type": "string"
         },
