@@ -1,6 +1,6 @@
 {
   "name": "@simonknittel/components",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Components for https://nightly.simonknittel.de",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
