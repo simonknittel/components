@@ -1,16 +1,22 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'sk-typography',
-  styleUrl: 'typography.css',
+  styleUrl: 'typography.scss',
   shadow: true
 })
 export class Typography {
+  @Prop() as: string
+
   render() {
-    return (
-      <Host>
-        <slot></slot>
-      </Host>
-    );
+    switch (this.as) {
+      case 'h3':
+        return (<h3><slot /></h3>)
+      case 'p':
+        return (<p><slot /></p>)
+
+      default:
+        return <slot />
+    }
   }
 }

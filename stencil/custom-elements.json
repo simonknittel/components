@@ -1,6 +1,79 @@
 {
   "tags": [
     {
+      "name": "sk-simple-teaser",
+      "properties": [
+        {
+          "name": "badge",
+          "type": "string"
+        },
+        {
+          "name": "heading",
+          "type": "string"
+        },
+        {
+          "name": "href",
+          "type": "string"
+        },
+        {
+          "name": "linkText",
+          "type": "string"
+        },
+        {
+          "name": "rel",
+          "type": "string"
+        },
+        {
+          "name": "tags",
+          "type": "string[]"
+        },
+        {
+          "name": "target",
+          "type": "string"
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "sk-slanted",
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "sk-slanted-teaser",
+      "properties": [
+        {
+          "name": "badge",
+          "type": "string"
+        },
+        {
+          "name": "heading",
+          "type": "string"
+        },
+        {
+          "name": "href",
+          "type": "string"
+        },
+        {
+          "name": "linkText",
+          "type": "string"
+        },
+        {
+          "name": "rel",
+          "type": "string"
+        },
+        {
+          "name": "tags",
+          "type": "string[]"
+        },
+        {
+          "name": "target",
+          "type": "string"
+        }
+      ],
+      "events": []
+    },
+    {
       "name": "sk-social-link",
       "properties": [
         {
@@ -40,7 +113,12 @@
     },
     {
       "name": "sk-typography",
-      "properties": [],
+      "properties": [
+        {
+          "name": "as",
+          "type": "string"
+        }
+      ],
       "events": []
     }
   ]
