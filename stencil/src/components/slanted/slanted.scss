@@ -11,23 +11,30 @@
 
   position: relative;
 
-  padding: 3rem;
+  padding: 3rem 3.8rem;
 
+  background-color: var(--sk-slanted-background-color, $black);
   color: var(--sk-slanted-color, $yellow);
+}
 
-  &::before {
-    content: "";
-    display: block;
+@media (min-width: $max-width) {
+  :host {
+    background-color: transparent;
 
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
+    &::before {
+      content: "";
+      display: block;
 
-    width: 100%;
-    height: 100%;
-    transform: $skew;
+      z-index: -1;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%) $skew;
 
-    background-color: var(--sk-slanted-background-color, $black);
+      width: calc(100% - 1.6rem);
+      height: 100%;
+
+      background-color: var(--sk-slanted-background-color, $black);
+    }
   }
 }

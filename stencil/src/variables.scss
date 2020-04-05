@@ -1,4 +1,11 @@
-$yellow: #fc0;
+$yellow: hsl(48, 100%, 50%);
 $black: #222;
+$black--light: #444;
 
 $skew: skew(-10deg);
+
+$bp--small: 600px;
+$bp--medium: 960px;
+$bp--large: 1280px;
+
+$max-width: $bp--large;

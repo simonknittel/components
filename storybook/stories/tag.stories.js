@@ -30,7 +30,7 @@ export const onBlack = () => {
 onBlack.story = {
   parameters: {
     backgrounds: [
-      { name: 'black', value: '#000', default: true },
+      { name: 'black', value: '#222', default: true },
     ],
   },
 }

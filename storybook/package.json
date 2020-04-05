@@ -1,7 +1,8 @@
 {
   "scripts": {
     "storybook": "start-storybook -p 6006 -s ../stencil/www",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "start": "npm run storybook"
   },
   "devDependencies": {
     "@storybook/addon-backgrounds": "5.3.13",
@@ -9,6 +10,7 @@
     "@storybook/addon-knobs": "5.3.13",
     "@storybook/addon-links": "5.3.13",
     "@storybook/addon-storysource": "5.3.13",
+    "@storybook/addon-viewport": "5.3.18",
     "@storybook/web-components": "5.3.13",
     "babel-loader": "8.0.6",
     "lit-html": "1.1.2"

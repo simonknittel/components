@@ -1,3 +1,5 @@
+@import '../../variables';
+
 *,
 *::before,
 *::after {
@@ -6,48 +8,71 @@
 
 :host {
   display: inline-block;
+  vertical-align: middle;
 }
 
 a {
   display: inline-flex;
   align-items: center;
   padding: 1rem;
-  color: #fc0;
+  color: $yellow;
   border-radius: .25rem;
   text-decoration: none;
 
   &:hover {
-    background-color: #fc0;
-    color: #000;
-
     .icon {
-      &--add-background {
-        background-color: #000;
-        color: #fc0;
-      }
+      background-color: $black;
+      color: $yellow;
+    }
+  }
+
+  &:not(.compact):not(.compact-on-small) {
+    &:hover {
+      background-color: $yellow;
+      color: $black;
+    }
+  }
+
+  &.compact,
+  &.compact-on-small {
+    padding: 0;
+
+    .text {
+      display: none;
     }
   }
 }
 
 .icon {
   display: inline-block;
+  vertical-align: middle;
+
   width: 2rem;
   height: 2rem;
-  margin-right: .5rem;
+  padding: 0.25rem;
+
+  border-radius: .25rem;
+  background-color: $yellow;
+  color: $black;
 
   svg {
     width: 100%;
     height: 100%;
   }
+}
 
-  &--add-background {
-    padding: .25rem;
-    border-radius: .2rem;
-    background-color: #fc0;
-    color: #000;
-  }
+.text {
+  margin-left: .5rem;
+}
 
-  &--patreon {
-    padding: .35rem;
+@media (min-width: $bp--small) {
+  a {
+    &.compact-on-small {
+      padding: 1rem;
+
+      .text {
+        display: inline-block;
+      }
+    }
   }
 }

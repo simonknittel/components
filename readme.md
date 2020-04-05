@@ -12,7 +12,7 @@ Makes use of https://stenciljs.com and https://github.com/storybookjs/storybook/
 ## Build, watch and serve stories
 
     cd storybook
-    npm run storybook
+    npm start
 
 ## Build and publish a new version
 

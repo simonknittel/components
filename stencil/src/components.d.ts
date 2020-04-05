@@ -30,6 +30,8 @@ export namespace Components {
     'target': string;
   }
   interface SkSocialLink {
+    'compact': boolean;
+    'compactOnSmall': boolean;
     'icon': string;
     'text': string;
     'url': string;
@@ -121,6 +123,8 @@ declare namespace LocalJSX {
     'target'?: string;
   }
   interface SkSocialLink {
+    'compact'?: boolean;
+    'compactOnSmall'?: boolean;
     'icon'?: string;
     'text'?: string;
     'url'?: string;

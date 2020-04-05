@@ -77,6 +77,14 @@
       "name": "sk-social-link",
       "properties": [
         {
+          "name": "compact",
+          "type": "boolean"
+        },
+        {
+          "name": "compactOnSmall",
+          "type": "boolean"
+        },
+        {
           "name": "icon",
           "type": "string"
         },
