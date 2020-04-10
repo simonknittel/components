@@ -4,6 +4,14 @@ import fs from 'fs';
 
 export const config: Config = {
   namespace: 'components',
+  buildEs5: false,
+  extras: {
+    cssVarsShim: false,
+    dynamicImportShim: false,
+    safari10: false,
+    scriptDataOpts: false,
+    shadowDomShim: false
+  },
   outputTargets: [
     {
       type: 'dist',
