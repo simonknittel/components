@@ -11,7 +11,7 @@
 
   position: relative;
 
-  padding: 3rem 3.8rem;
+  padding: 1.5rem 3.8rem;
 
   background-color: var(--sk-slanted-background-color, $black);
   color: var(--sk-slanted-color, $yellow);
@@ -20,6 +20,9 @@
 @media (min-width: $max-width) {
   :host {
     background-color: transparent;
+
+    padding-left: 3rem;
+    padding-right: 3rem;
 
     &::before {
       content: "";

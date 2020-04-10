@@ -10,6 +10,7 @@
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
 | `as`     | `as`      |             | `string` | `undefined` |
+| `size`   | `size`    |             | `string` | `undefined` |
 
 
 ## Dependencies

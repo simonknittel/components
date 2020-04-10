@@ -125,6 +125,10 @@
         {
           "name": "as",
           "type": "string"
+        },
+        {
+          "name": "size",
+          "type": "string"
         }
       ],
       "events": []

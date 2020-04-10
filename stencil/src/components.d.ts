@@ -44,6 +44,7 @@ export namespace Components {
   }
   interface SkTypography {
     'as': string;
+    'size': string;
   }
 }
 
@@ -137,6 +138,7 @@ declare namespace LocalJSX {
   }
   interface SkTypography {
     'as'?: string;
+    'size'?: string;
   }
 
   interface IntrinsicElements {
