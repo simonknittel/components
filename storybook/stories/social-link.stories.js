@@ -28,8 +28,8 @@ export const multiple = () => {
     <sk-social-link compact="${boolean('Compact', false)}" text="Twitter" icon="twitter" url="#"></sk-social-link>
     <sk-social-link compact="${boolean('Compact', false)}" text="Patreon" icon="patreon" url="#"></sk-social-link>
     <sk-social-link compact="${boolean('Compact', false)}" text="Stack Overlow" icon="stack-overflow" url="#"></sk-social-link>
-    <sk-social-link compact="${boolean('Compact', false)}" text="XING" icon="xing" url="#"></sk-social-link>
-    <sk-social-link compact-on-small="true" text="LinkedId" icon="linkedin-in" url="#"></sk-social-link>
+    <sk-social-link compact="true" text="XING" icon="xing" url="#"></sk-social-link>
+    <sk-social-link compact-on-small="true" text="LinkedIn" icon="linkedin-in" url="#"></sk-social-link>
   `
 }
 

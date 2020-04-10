@@ -19,20 +19,6 @@ a {
   border-radius: .25rem;
   text-decoration: none;
 
-  &:hover {
-    .icon {
-      background-color: $black;
-      color: $yellow;
-    }
-  }
-
-  &:not(.compact):not(.compact-on-small) {
-    &:hover {
-      background-color: $yellow;
-      color: $black;
-    }
-  }
-
   &.compact,
   &.compact-on-small {
     padding: 0;
@@ -67,6 +53,18 @@ a {
 
 @media (min-width: $bp--small) {
   a {
+    &:hover {
+      &:not(.compact) {
+        background-color: $yellow;
+        color: $black;
+      }
+
+      .icon {
+        background-color: $black;
+        color: $yellow;
+      }
+    }
+
     &.compact-on-small {
       padding: 1rem;
 
