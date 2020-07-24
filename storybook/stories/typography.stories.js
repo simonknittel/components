@@ -6,11 +6,12 @@ export default {
   decorators: [withKnobs],
 }
 
-export const onWhite = () => {
+export function onWhite() {
   return `
     <sk-typography
       as=${select('as', ['p', 'h3'], 'p')}
-      size=${select('size', ['1-responsive'], '1-responsive')}
+      size=${select('size', ['16-responsive', '24-responsive', '32-responsive', '112-responsive'], '16-responsive')}
+      color=${select('color', ['inherit', 'yellow', 'black'], 'inherit')}
     >
       ${text('innerHTML', 'Lorem ipsum')}
     </sk-typography>

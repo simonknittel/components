@@ -10,6 +10,7 @@
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
 | `as`     | `as`      |             | `string` | `undefined` |
+| `color`  | `color`   |             | `string` | `undefined` |
 | `size`   | `size`    |             | `string` | `undefined` |
 
 
@@ -17,6 +18,8 @@
 
 ### Used by
 
+ - [sk-link](../link)
+ - [sk-not-found](../not-found)
  - [sk-simple-teaser](../simple-teaser)
  - [sk-slanted-teaser](../slanted-teaser)
  - [sk-social-link](../social-link)
@@ -25,6 +28,8 @@
 ### Graph
 ```mermaid
 graph TD;
+  sk-link --> sk-typography
+  sk-not-found --> sk-typography
   sk-simple-teaser --> sk-typography
   sk-slanted-teaser --> sk-typography
   sk-social-link --> sk-typography

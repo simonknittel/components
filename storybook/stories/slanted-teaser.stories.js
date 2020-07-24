@@ -21,6 +21,9 @@ export const onWhite = () => {
 
 onWhite.story = {
   parameters: {
+    backgrounds: [
+      { name: 'white', value: '#fff5cc', default: true },
+    ],
     knobs: {
       escapeHTML: false,
     }

@@ -1,0 +1,36 @@
+@import '../../variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba($black, .5);
+  }
+}
+
+.text {
+  display: inline-block;
+  margin-left: .5rem;
+
+  text-decoration: underline;
+
+  .right & {
+    margin-left: 0;
+    margin-right: .5rem;
+  }
+}

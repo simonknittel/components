@@ -1,7 +1,12 @@
 @import '../../variables';
 
 :host {
-  font-family: 'Open Sans';
+  font-family: $font;
+  color: inherit;
+
+  &.block {
+    display: block;
+  }
 
   > * {
     margin-top: 0;
@@ -10,15 +15,29 @@
 }
 
 .size- {
-  &1-responsive {
-    font-size: .8rem;
+  // 16-responsive
+  font-size: .8rem;
+  @media (min-width: $bp--small) { font-size: 1rem; }
+
+  &24-responsive {
+    font-size: 1.5rem;
+    @media (min-width: $bp--small) {}
+  }
+
+  &32-responsive {
+    font-size: 2rem;
+    @media (min-width: $bp--small) {}
+  }
+
+  &112-responsive {
+    font-size: 7rem;
+    @media (min-width: $bp--small) {}
   }
 }
 
-@media (min-width: $bp--small) {
-  .size- {
-    &1-responsive {
-      font-size: 1rem;
-    }
-  }
+.color- {
+  color: inherit;
+
+  &yellow { color: $yellow; }
+  &black { color: $black; }
 }

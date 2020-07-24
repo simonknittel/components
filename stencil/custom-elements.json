@@ -1,6 +1,62 @@
 {
   "tags": [
     {
+      "name": "sk-link",
+      "properties": [
+        {
+          "name": "href",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "iconPosition",
+          "type": "string"
+        },
+        {
+          "name": "noopener",
+          "type": "string"
+        },
+        {
+          "name": "target",
+          "type": "string"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "sk-not-found",
+      "properties": [
+        {
+          "name": "heading",
+          "type": "string"
+        },
+        {
+          "name": "linkHref",
+          "type": "string"
+        },
+        {
+          "name": "linkIcon",
+          "type": "string"
+        },
+        {
+          "name": "linkText",
+          "type": "string"
+        },
+        {
+          "name": "subheading",
+          "type": "string"
+        }
+      ],
+      "events": []
+    },
+    {
       "name": "sk-simple-teaser",
       "properties": [
         {
@@ -124,6 +180,10 @@
       "properties": [
         {
           "name": "as",
+          "type": "string"
+        },
+        {
+          "name": "color",
           "type": "string"
         },
         {
