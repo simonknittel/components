@@ -6,7 +6,7 @@ export default {
   decorators: [withKnobs],
 }
 
-export const onBlack = () => {
+export function defaultView() {
   const el = document.createElement('sk-social-link')
   el.url = text('URL', 'https://github.com/simonknittel')
   el.text = text('Text', 'GitHub')
@@ -14,7 +14,7 @@ export const onBlack = () => {
   return el
 }
 
-onBlack.story = {
+defaultView.story = {
   parameters: {
     backgrounds: [
       { name: 'black', value: '#222', default: true },
@@ -22,7 +22,7 @@ onBlack.story = {
   },
 }
 
-export const multiple = () => {
+export function multiple() {
   return `
     <sk-social-link compact="${boolean('Compact', false)}" text="GitHub" icon="github" url="#"></sk-social-link>
     <sk-social-link compact="${boolean('Compact', false)}" text="Twitter" icon="twitter" url="#"></sk-social-link>

@@ -15,7 +15,7 @@ export class NotFound {
   render() {
     return (
       <Host>
-        <sk-typography as="h1" size="112-responsive">{ this.heading }</sk-typography>
+        <sk-typography as="h1" size="112-responsive" lineHeight="1">{ this.heading }</sk-typography>
         <sk-typography as="h2" size="24-responsive">{ this.subheading }</sk-typography>
         <sk-link href={ this.linkHref } icon={ this.linkIcon }>{ this.linkText }</sk-link>
       </Host>

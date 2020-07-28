@@ -6,6 +6,6 @@ module.exports = {
     '@storybook/addon-storysource',
     '@storybook/addon-backgrounds/register',
     '@storybook/addon-links/register',
-    '@storybook/addon-viewport/register',
+    // '@storybook/addon-viewport/register', // BUG: Throws some error to the console
   ],
 };

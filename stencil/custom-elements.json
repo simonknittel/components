@@ -4,6 +4,12 @@
       "name": "sk-link",
       "properties": [
         {
+          "name": "color",
+          "type": "string",
+          "default": "'inherit'",
+          "defaultValue": "'inherit'"
+        },
+        {
           "name": "href",
           "type": "string"
         },
@@ -13,7 +19,9 @@
         },
         {
           "name": "iconPosition",
-          "type": "string"
+          "type": "string",
+          "default": "'left'",
+          "defaultValue": "'left'"
         },
         {
           "name": "noopener",
@@ -134,11 +142,15 @@
       "properties": [
         {
           "name": "compact",
-          "type": "boolean"
+          "type": "boolean",
+          "default": "false",
+          "defaultValue": "false"
         },
         {
           "name": "compactOnSmall",
-          "type": "boolean"
+          "type": "boolean",
+          "default": "false",
+          "defaultValue": "false"
         },
         {
           "name": "icon",
@@ -180,15 +192,27 @@
       "properties": [
         {
           "name": "as",
-          "type": "string"
+          "type": "string",
+          "default": "'span'",
+          "defaultValue": "'span'"
         },
         {
           "name": "color",
-          "type": "string"
+          "type": "string",
+          "default": "'inherit'",
+          "defaultValue": "'inherit'"
+        },
+        {
+          "name": "lineHeight",
+          "type": "string",
+          "default": "'1.2'",
+          "defaultValue": "'1.2'"
         },
         {
           "name": "size",
-          "type": "string"
+          "type": "string",
+          "default": "'16-responsive'",
+          "defaultValue": "'16-responsive'"
         }
       ],
       "events": []

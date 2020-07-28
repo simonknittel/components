@@ -6,7 +6,7 @@ export default {
   decorators: [withKnobs],
 }
 
-export const onWhite = () => {
+export function defaultView() {
   const el = document.createElement('sk-slanted-teaser')
   el.heading = text('Heading', 'Heading')
   el.badge = text('Badge', 'work in progress')
@@ -19,7 +19,7 @@ export const onWhite = () => {
   return el
 }
 
-onWhite.story = {
+defaultView.story = {
   parameters: {
     backgrounds: [
       { name: 'white', value: '#fff5cc', default: true },

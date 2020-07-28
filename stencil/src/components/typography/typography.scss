@@ -4,9 +4,9 @@
   font-family: $font;
   color: inherit;
 
-  &.block {
-    display: block;
-  }
+  // &.block {
+  //   display: block;
+  // }
 
   > * {
     margin-top: 0;
@@ -40,4 +40,13 @@
 
   &yellow { color: $yellow; }
   &black { color: $black; }
+  &light-black { color: $black--light; }
+  &white { color: $white; }
+}
+
+.line-height- {
+  line-height: 1.2;
+
+  &1 { line-height: 1 }
+  &15 { line-height: 1.5 }
 }

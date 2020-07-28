@@ -10,8 +10,8 @@ export class SocialLink {
   @Prop() url: string
   @Prop() text: string
   @Prop() icon: string
-  @Prop() compact: boolean
-  @Prop() compactOnSmall: boolean
+  @Prop() compact: boolean = false
+  @Prop() compactOnSmall: boolean = false
 
   render() {
     const viewbox = {

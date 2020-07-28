@@ -6,7 +6,7 @@ export default {
   decorators: [withKnobs],
 }
 
-export const onYellow = () => {
+export function defaultView() {
   const el = document.createElement('sk-simple-teaser')
   el.heading = text('Heading', 'Heading')
   el.badge = text('Badge', 'work in progress')
@@ -19,7 +19,7 @@ export const onYellow = () => {
   return el
 }
 
-onYellow.story = {
+defaultView.story = {
   parameters: {
     backgrounds: [
       { name: 'yellow', value: '#fc0', default: true },

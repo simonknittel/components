@@ -9,8 +9,8 @@
 
 | Property         | Attribute          | Description | Type      | Default     |
 | ---------------- | ------------------ | ----------- | --------- | ----------- |
-| `compact`        | `compact`          |             | `boolean` | `undefined` |
-| `compactOnSmall` | `compact-on-small` |             | `boolean` | `undefined` |
+| `compact`        | `compact`          |             | `boolean` | `false`     |
+| `compactOnSmall` | `compact-on-small` |             | `boolean` | `false`     |
 | `icon`           | `icon`             |             | `string`  | `undefined` |
 | `text`           | `text`             |             | `string`  | `undefined` |
 | `url`            | `url`              |             | `string`  | `undefined` |

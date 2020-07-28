@@ -7,11 +7,12 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `as`     | `as`      |             | `string` | `undefined` |
-| `color`  | `color`   |             | `string` | `undefined` |
-| `size`   | `size`    |             | `string` | `undefined` |
+| Property     | Attribute     | Description | Type     | Default           |
+| ------------ | ------------- | ----------- | -------- | ----------------- |
+| `as`         | `as`          |             | `string` | `'span'`          |
+| `color`      | `color`       |             | `string` | `'inherit'`       |
+| `lineHeight` | `line-height` |             | `string` | `'1.2'`           |
+| `size`       | `size`        |             | `string` | `'16-responsive'` |
 
 
 ## Dependencies

@@ -16,7 +16,7 @@ a {
   align-items: center;
   padding: 1rem;
   color: $yellow;
-  border-radius: .25rem;
+  border-radius: $border-radius;
   text-decoration: none;
 
   &.compact,
@@ -37,7 +37,7 @@ a {
   height: 2rem;
   padding: 0.25rem;
 
-  border-radius: .25rem;
+  border-radius: $border-radius;
   background-color: $yellow;
   color: $black;
 

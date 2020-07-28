@@ -6,7 +6,7 @@ export default {
   decorators: [withKnobs],
 }
 
-export function onWhite() {
+export function defaultView() {
   const el = document.createElement('sk-not-found')
   el.heading = text('Heading', '404')
   el.subheading = text('Subheading', 'Page not found')
@@ -16,7 +16,7 @@ export function onWhite() {
   return el
 }
 
-onWhite.story = {
+defaultView.story = {
   parameters: {
     backgrounds: [
       { name: 'white', value: '#fff5cc', default: true },

@@ -15,22 +15,32 @@ a {
   display: inline-flex;
   align-items: center;
 
-  color: $black;
+  color: inherit;
   text-decoration: none;
 
   &:hover {
-    color: rgba($black, .5);
+    opacity: .5;
+  }
+
+  &.color- {
+    &yellow { color: $yellow; }
+    &black { color: $black; }
+    &light-black { color: $black--light; }
+    &white { color: $white; }
+  }
+
+  &.icon-position- {
+    &right .text {
+      margin-left: 0;
+      margin-right: .5rem;
+    }
   }
 }
 
 .text {
   display: inline-block;
+
   margin-left: .5rem;
 
   text-decoration: underline;
-
-  .right & {
-    margin-left: 0;
-    margin-right: .5rem;
-  }
 }

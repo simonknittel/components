@@ -6,16 +6,17 @@ export default {
   decorators: [withKnobs],
 }
 
-export const onYellow = () => {
+export function defaultView() {
   const el = document.createElement('sk-slanted')
   el.innerHTML = text('innerHTML', '<sk-typography>Lorem ipsum</sk-typography>')
   return el
 }
 
-onYellow.story = {
+defaultView.story = {
   parameters: {
     backgrounds: [
-      { name: 'yellow', value: '#fc0', default: true },
+      { name: 'white', value: '#fff5cc', default: true },
+      { name: 'yellow', value: '#fc0' },
     ],
     knobs: {
       escapeHTML: false,

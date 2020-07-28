@@ -6,21 +6,22 @@ export default {
   decorators: [withKnobs],
 }
 
-export const onYellow = () => {
+export function defaultView() {
   const el = document.createElement('sk-tag')
   el.text = text('Text', 'Lorem ipsum')
   return el
 }
 
-onYellow.story = {
+defaultView.story = {
   parameters: {
     backgrounds: [
-      { name: 'yellow', value: '#fc0', default: true },
+      { name: 'white', value: '#fff5cc', default: true },
+      { name: 'yellow', value: '#fc0' },
     ],
   },
 }
 
-export const onBlack = () => {
+export function onBlack() {
   const el = document.createElement('sk-tag')
   el.text = text('Text', 'Lorem ipsum')
   el.style = '--sk-tag-border-color: rgba(#fc0, .5); --sk-tag-color: #fc0'

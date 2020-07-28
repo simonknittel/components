@@ -9,9 +9,10 @@
 
 | Property       | Attribute       | Description | Type     | Default     |
 | -------------- | --------------- | ----------- | -------- | ----------- |
+| `color`        | `color`         |             | `string` | `'inherit'` |
 | `href`         | `href`          |             | `string` | `undefined` |
 | `icon`         | `icon`          |             | `string` | `undefined` |
-| `iconPosition` | `icon-position` |             | `string` | `undefined` |
+| `iconPosition` | `icon-position` |             | `string` | `'left'`    |
 | `noopener`     | `noopener`      |             | `string` | `undefined` |
 | `target`       | `target`        |             | `string` | `undefined` |
 | `text`         | `text`          |             | `string` | `undefined` |

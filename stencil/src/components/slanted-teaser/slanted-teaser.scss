@@ -61,6 +61,8 @@
   text-align: right;
   text-decoration: none;
 
+  transition: transform .2s;
+
   &::before {
     content: "";
     display: block;
@@ -75,12 +77,9 @@
     height: 100%;
 
     background-color: var(--sk-slanted-teaser-link-background-color, $black);
-    transition: background-color .1s;
   }
 
   &:hover {
-    &::before {
-      background-color: var(--sk-slanted-teaser-link-background-color-hover, $black--light);
-    }
+    transform: translateX(.5rem);
   }
 }

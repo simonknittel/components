@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SkLink {
+        "color": string;
         "href": string;
         "icon": string;
         "iconPosition": string;
@@ -57,6 +58,7 @@ export namespace Components {
     interface SkTypography {
         "as": string;
         "color": string;
+        "lineHeight": string;
         "size": string;
     }
 }
@@ -129,6 +131,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SkLink {
+        "color"?: string;
         "href"?: string;
         "icon"?: string;
         "iconPosition"?: string;
@@ -179,6 +182,7 @@ declare namespace LocalJSX {
     interface SkTypography {
         "as"?: string;
         "color"?: string;
+        "lineHeight"?: string;
         "size"?: string;
     }
     interface IntrinsicElements {
