@@ -13,10 +13,11 @@ export class Link {
   @Prop() icon: string
   @Prop() iconPosition: string = 'left'
   @Prop() color: string = 'inherit'
+  @Prop() preventClick: boolean = false
 
   @Event() clicked: EventEmitter<MouseEvent>
   private onClick(e: MouseEvent) {
-    e.preventDefault() // TODO: For some reason not cancelable from Vue
+    if (this.preventClick) e.preventDefault() // TODO: For some reason not cancelable from Vue
     this.clicked.emit(e)
   }
 

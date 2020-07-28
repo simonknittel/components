@@ -7,13 +7,14 @@
 
 ## Properties
 
-| Property     | Attribute    | Description | Type     | Default     |
-| ------------ | ------------ | ----------- | -------- | ----------- |
-| `heading`    | `heading`    |             | `string` | `undefined` |
-| `linkHref`   | `link-href`  |             | `string` | `undefined` |
-| `linkIcon`   | `link-icon`  |             | `string` | `undefined` |
-| `linkText`   | `link-text`  |             | `string` | `undefined` |
-| `subheading` | `subheading` |             | `string` | `undefined` |
+| Property           | Attribute            | Description | Type      | Default     |
+| ------------------ | -------------------- | ----------- | --------- | ----------- |
+| `heading`          | `heading`            |             | `string`  | `undefined` |
+| `linkHref`         | `link-href`          |             | `string`  | `undefined` |
+| `linkIcon`         | `link-icon`          |             | `string`  | `undefined` |
+| `linkPreventClick` | `link-prevent-click` |             | `boolean` | `false`     |
+| `linkText`         | `link-text`          |             | `string`  | `undefined` |
+| `subheading`       | `subheading`         |             | `string`  | `undefined` |
 
 
 ## Dependencies

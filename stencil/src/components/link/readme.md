@@ -7,15 +7,16 @@
 
 ## Properties
 
-| Property       | Attribute       | Description | Type     | Default     |
-| -------------- | --------------- | ----------- | -------- | ----------- |
-| `color`        | `color`         |             | `string` | `'inherit'` |
-| `href`         | `href`          |             | `string` | `undefined` |
-| `icon`         | `icon`          |             | `string` | `undefined` |
-| `iconPosition` | `icon-position` |             | `string` | `'left'`    |
-| `noopener`     | `noopener`      |             | `string` | `undefined` |
-| `target`       | `target`        |             | `string` | `undefined` |
-| `text`         | `text`          |             | `string` | `undefined` |
+| Property       | Attribute       | Description | Type      | Default     |
+| -------------- | --------------- | ----------- | --------- | ----------- |
+| `color`        | `color`         |             | `string`  | `'inherit'` |
+| `href`         | `href`          |             | `string`  | `undefined` |
+| `icon`         | `icon`          |             | `string`  | `undefined` |
+| `iconPosition` | `icon-position` |             | `string`  | `'left'`    |
+| `noopener`     | `noopener`      |             | `string`  | `undefined` |
+| `preventClick` | `prevent-click` |             | `boolean` | `false`     |
+| `target`       | `target`        |             | `string`  | `undefined` |
+| `text`         | `text`          |             | `string`  | `undefined` |
 
 
 ## Events

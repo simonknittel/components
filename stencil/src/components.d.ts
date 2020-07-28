@@ -12,6 +12,7 @@ export namespace Components {
         "icon": string;
         "iconPosition": string;
         "noopener": string;
+        "preventClick": boolean;
         "target": string;
         "text": string;
     }
@@ -19,6 +20,7 @@ export namespace Components {
         "heading": string;
         "linkHref": string;
         "linkIcon": string;
+        "linkPreventClick": boolean;
         "linkText": string;
         "subheading": string;
     }
@@ -137,6 +139,7 @@ declare namespace LocalJSX {
         "iconPosition"?: string;
         "noopener"?: string;
         "onClicked"?: (event: CustomEvent<MouseEvent>) => void;
+        "preventClick"?: boolean;
         "target"?: string;
         "text"?: string;
     }
@@ -144,6 +147,7 @@ declare namespace LocalJSX {
         "heading"?: string;
         "linkHref"?: string;
         "linkIcon"?: string;
+        "linkPreventClick"?: boolean;
         "linkText"?: string;
         "subheading"?: string;
     }
