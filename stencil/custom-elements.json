@@ -36,7 +36,12 @@
           "type": "string"
         }
       ],
-      "events": []
+      "events": [
+        {
+          "name": "clicked",
+          "type": "MouseEvent"
+        }
+      ]
     },
     {
       "name": "sk-not-found",

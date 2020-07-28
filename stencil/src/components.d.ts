@@ -136,6 +136,7 @@ declare namespace LocalJSX {
         "icon"?: string;
         "iconPosition"?: string;
         "noopener"?: string;
+        "onClicked"?: (event: CustomEvent<MouseEvent>) => void;
         "target"?: string;
         "text"?: string;
     }

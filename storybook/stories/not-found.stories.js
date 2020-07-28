@@ -13,6 +13,11 @@ export function defaultView() {
   el.linkHref = text('Link href', '#')
   el.linkIcon = text('Link icon', '<')
   el.linkText = text('Link text', 'Go to home')
+
+  el.addEventListener('clicked', (e) => {
+    console.log('clicked(e)', e)
+  })
+
   return el
 }
 

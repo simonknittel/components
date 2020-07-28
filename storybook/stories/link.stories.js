@@ -25,5 +25,10 @@ export function defaultView() {
   el.iconPosition = select('Icon position', ['left', 'right'], 'left')
   el.innerHTML = 'Go back'
   el.color = select('color', ['inherit', 'yellow', 'black', 'light-black', 'white'], 'inherit')
+
+  el.addEventListener('clicked', (e) => {
+    console.log('clicked(e)', e)
+  })
+
   return el
 }

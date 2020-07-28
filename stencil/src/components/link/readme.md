@@ -18,6 +18,13 @@
 | `text`         | `text`          |             | `string` | `undefined` |
 
 
+## Events
+
+| Event     | Description | Type                      |
+| --------- | ----------- | ------------------------- |
+| `clicked` |             | `CustomEvent<MouseEvent>` |
+
+
 ## Dependencies
 
 ### Used by

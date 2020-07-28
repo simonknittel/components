@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'sk-link',
@@ -13,6 +13,12 @@ export class Link {
   @Prop() icon: string
   @Prop() iconPosition: string = 'left'
   @Prop() color: string = 'inherit'
+
+  @Event() clicked: EventEmitter<MouseEvent>
+  private onClick(e: MouseEvent) {
+    e.preventDefault() // TODO: For some reason not cancelable from Vue
+    this.clicked.emit(e)
+  }
 
   render() {
     const classArray = []
@@ -35,6 +41,7 @@ export class Link {
         target={ this.target }
         rel={ this.noopener }
         class={ classArray.join(' ') }
+        onClick={ this.onClick.bind(this) }
       >
         { this.iconPosition !== 'right' ? this.icon : '' }
         <sk-typography class="text"><slot /></sk-typography>
