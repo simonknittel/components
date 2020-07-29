@@ -1,0 +1,8 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+import { markdownToHTML, styleMarkdown } from './utils'
+import CHANGELOG from '../../CHANGELOG.md'
+
+<Meta title="Overview/Changelog" />
+
+<div dangerouslySetInnerHTML={{__html: styleMarkdown(markdownToHTML(CHANGELOG))}}></div>

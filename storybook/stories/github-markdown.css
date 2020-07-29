@@ -3,10 +3,6 @@
   Maybe replace with https://github.com/primer/css/tree/master/src/markdown
 */
 
-.markdown-body {
-  padding: 1rem 2rem 2rem 2rem;
-}
-
 .markdown-body .octicon {
   display: inline-block;
   fill: currentColor;

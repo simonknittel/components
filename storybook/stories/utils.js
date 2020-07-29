@@ -5,6 +5,8 @@ import html from 'rehype-stringify'
 import sanitize from 'rehype-sanitize'
 import gh from 'hast-util-sanitize/lib/github'
 
+import githubMarkdownCSS from '!!raw-loader!./github-markdown.css'
+
 export function markdownToHTML(rawMarkdown) {
   const sanitizeOptions = gh
 
@@ -16,6 +18,10 @@ export function markdownToHTML(rawMarkdown) {
     .processSync(rawMarkdown).contents
 
   return htmlString
+}
+
+export function styleMarkdown(htmlString) {
+  return `<style>${githubMarkdownCSS}</style><div class="markdown-body">${htmlString}</div>`
 }
 
 export function htmlStringToElement(htmlString) {
