@@ -1,4 +1,5 @@
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { htmlStringToElement } from './utils';
 
 export default {
   title: 'Components/Not found',
@@ -7,18 +8,20 @@ export default {
 }
 
 export function defaultView() {
-  const el = document.createElement('sk-not-found')
-  el.heading = text('Heading', '404')
-  el.subheading = text('Subheading', 'Page not found')
-  el.linkHref = text('Link href', '#')
-  el.linkIcon = text('Link icon', '<')
-  el.linkText = text('Link text', 'Go to home')
+  const component = htmlStringToElement(`
+    <sk-not-found
+      heading="${text('Heading', '404')}"
+      subheading="${text('Subheading', 'Page not found')}"
+      link-href="${text('Link href', '#')}"
+      link-icon="${text('Link icon', '<')}"
+      link-text="${text('Link text', 'Go to home')}"
+      link-prevent-click="${boolean('Link prevent click', false)}"
+    />
+  `)
 
-  el.addEventListener('clicked', (e) => {
-    console.log('clicked(e)', e)
-  })
+  component.addEventListener('clicked', e => console.log('clicked(e)', e))
 
-  return el
+  return component
 }
 
 defaultView.story = {

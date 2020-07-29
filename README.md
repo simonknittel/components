@@ -1,8 +1,8 @@
 # components
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/simonknittel/components?style=flat-square)](https://github.com/simonknittel/components/releases)
-[![David (path)](https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square)](./stencil/package.json)
-[![GitHub](https://img.shields.io/github/license/simonknittel/components?style=flat-square)](./LICENSE)
+[![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/simonknittel/components?include_prereleases&style=flat-square)](https://github.com/simonknittel/components/releases)
+[![GitHub](https://img.shields.io/github/license/simonknittel/components?style=flat-square)](https://github.com/simonknittel/components/blob/master/LICENSE)
+[![David (path)](https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square)](https://github.com/simonknittel/components/blob/master/stencil/package.json)
 
 Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de). Makes use of [Stencil](https://stenciljs.com) and [Storybook](https://github.com/storybookjs/storybook/tree/next/app/web-components).
 

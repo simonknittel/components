@@ -7,5 +7,6 @@ module.exports = {
     '@storybook/addon-backgrounds/register',
     '@storybook/addon-links/register',
     // '@storybook/addon-viewport/register', // BUG: Throws some error to the console
+    '@whitespace/storybook-addon-html/register',
   ],
 };

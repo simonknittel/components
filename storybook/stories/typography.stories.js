@@ -1,4 +1,5 @@
-import { withKnobs, select, text } from "@storybook/addon-knobs";
+import { withKnobs, select, text } from '@storybook/addon-knobs';
+import { htmlStringToElement } from './utils';
 
 export default {
   title: 'Components/Typography/sk-typography',
@@ -7,7 +8,7 @@ export default {
 }
 
 export function defaultView() {
-  return `
+  const component = htmlStringToElement(`
     <sk-typography
       as=${select('as', ['p', 'h3'], 'p')}
       size=${select('size', ['16-responsive', '24-responsive', '32-responsive', '112-responsive'], '16-responsive')}
@@ -16,7 +17,11 @@ export function defaultView() {
     >
       ${text('innerHTML', 'Lorem ipsum')}
     </sk-typography>
-  `
+  `)
+
+  component.addEventListener('clicked', e => console.log('clicked(e)', e))
+
+  return component
 }
 
 defaultView.story = {

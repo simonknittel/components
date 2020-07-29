@@ -4,10 +4,13 @@ import {
   configure,
   addParameters,
   setCustomElements,
+  addDecorator
 } from '@storybook/web-components';
 
-import customElements from '../../stencil/custom-elements.json';
+import { withHTML } from '@whitespace/storybook-addon-html/html';
+addDecorator(withHTML);
 
+import customElements from '../../stencil/custom-elements.json';
 setCustomElements(customElements);
 
 addParameters({

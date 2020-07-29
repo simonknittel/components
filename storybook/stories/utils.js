@@ -17,3 +17,10 @@ export function markdownToHTML(rawMarkdown) {
 
   return htmlString
 }
+
+export function htmlStringToElement(htmlString) {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = htmlString.trim()
+  const component = wrapper.firstChild
+  return component
+}
