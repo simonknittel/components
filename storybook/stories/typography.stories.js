@@ -1,7 +1,7 @@
 import { withKnobs, select, text } from "@storybook/addon-knobs";
 
 export default {
-  title: 'sk-typography',
+  title: 'Components/Typography/sk-typography',
   component: 'sk-typography',
   decorators: [withKnobs],
 }

@@ -1,7 +1,7 @@
 import { withKnobs, array, text } from "@storybook/addon-knobs";
 
 export default {
-  title: 'sk-simple-teaser',
+  title: 'Components/Teasers/sk-simple-teaser',
   component: 'sk-simple-teaser',
   decorators: [withKnobs],
 }

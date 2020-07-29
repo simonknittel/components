@@ -1,7 +1,7 @@
 import { withKnobs, text, select } from "@storybook/addon-knobs"
 
 export default {
-  title: 'sk-link',
+  title: 'Components/Link',
   component: 'sk-link',
   decorators: [withKnobs],
   parameters: {

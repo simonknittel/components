@@ -1,8 +1,10 @@
 # components
 
-Component library for https://nightly.simonknittel.de
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/simonknittel/components?style=flat-square)](https://github.com/simonknittel/components/releases)
+[![David (path)](https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square)](./stencil/package.json)
+[![GitHub](https://img.shields.io/github/license/simonknittel/components?style=flat-square)](./LICENSE)
 
-Makes use of https://stenciljs.com and https://github.com/storybookjs/storybook/tree/next/app/web-components
+Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de). Makes use of [Stencil](https://stenciljs.com) and [Storybook](https://github.com/storybookjs/storybook/tree/next/app/web-components).
 
 ## Build and watch components
 
@@ -22,3 +24,4 @@ Makes use of https://stenciljs.com and https://github.com/storybookjs/storybook/
 4. `cd stencil`
 5. `npm run build`
 6. `npm publish`
+7. Create a new [(pre-)release on GitHub](https://github.com/simonknittel/components/releases/new)

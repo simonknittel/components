@@ -1,7 +1,7 @@
 import { withKnobs, array, text } from "@storybook/addon-knobs";
 
 export default {
-  title: 'sk-slanted-teaser',
+  title: 'Components/Teasers/sk-slanted-teaser',
   component: 'sk-slanted-teaser',
   decorators: [withKnobs],
 }

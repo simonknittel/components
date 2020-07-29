@@ -1,7 +1,7 @@
 import { withKnobs, array } from "@storybook/addon-knobs";
 
 export default {
-  title: 'sk-tag-list',
+  title: 'Components/Tags/sk-tag-list',
   component: 'sk-tag-list',
   decorators: [withKnobs],
 }

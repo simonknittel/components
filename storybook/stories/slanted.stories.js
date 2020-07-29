@@ -1,7 +1,7 @@
 import { withKnobs, text } from "@storybook/addon-knobs";
 
 export default {
-  title: 'sk-slanted',
+  title: 'Components/Slanted',
   component: 'sk-slanted',
   decorators: [withKnobs],
 }

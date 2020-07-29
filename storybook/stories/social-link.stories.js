@@ -1,7 +1,7 @@
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 
 export default {
-  title: 'sk-social-link',
+  title: 'Components/Social link',
   component: 'sk-social-link',
   decorators: [withKnobs],
 }

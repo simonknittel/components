@@ -1,7 +1,7 @@
 import { withKnobs, text } from "@storybook/addon-knobs";
 
 export default {
-  title: 'sk-not-found',
+  title: 'Components/Not found',
   component: 'sk-not-found',
   decorators: [withKnobs],
 }
