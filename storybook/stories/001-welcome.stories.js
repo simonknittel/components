@@ -1,6 +1,6 @@
-import { markdownToHTML } from '../utils'
+import { markdownToHTML } from './utils'
 
-import githubMarkdownCSS from '!!raw-loader!../github-markdown.css'
+import githubMarkdownCSS from '!!raw-loader!./github-markdown.css'
 
 import README from '../../README.md'
 import CHANGELOG from '../../CHANGELOG.md'

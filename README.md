@@ -19,7 +19,7 @@ Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de)
 ## Build and publish a new version
 
 1. Stage and commit the latest changes
-2. Bump version of [./stencil/package.json](stencil/package.json)
+2. Bump version of [stencil/package.json](./stencil/package.json) and [stencil/package-lock.json](./stencil/package-lock.json)
 3. Create tag and push
 4. `cd stencil`
 5. `npm run build`

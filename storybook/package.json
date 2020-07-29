@@ -1,7 +1,7 @@
 {
   "scripts": {
     "storybook": "start-storybook -p 6006 -s ../stencil/www",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s ../stencil/www",
     "start": "npm run storybook"
   },
   "devDependencies": {
