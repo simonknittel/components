@@ -19,6 +19,7 @@
 
 ### Used by
 
+ - [sk-badge](../badge)
  - [sk-link](../link)
  - [sk-not-found](../not-found)
  - [sk-simple-teaser](../simple-teaser)
@@ -29,6 +30,7 @@
 ### Graph
 ```mermaid
 graph TD;
+  sk-badge --> sk-typography
   sk-link --> sk-typography
   sk-not-found --> sk-typography
   sk-simple-teaser --> sk-typography

@@ -1,6 +1,11 @@
 {
   "tags": [
     {
+      "name": "sk-badge",
+      "properties": [],
+      "events": []
+    },
+    {
       "name": "sk-link",
       "properties": [
         {

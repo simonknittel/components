@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface SkBadge {
+    }
     interface SkLink {
         "color": string;
         "href": string;
@@ -65,6 +67,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLSkBadgeElement extends Components.SkBadge, HTMLStencilElement {
+    }
+    var HTMLSkBadgeElement: {
+        prototype: HTMLSkBadgeElement;
+        new (): HTMLSkBadgeElement;
+    };
     interface HTMLSkLinkElement extends Components.SkLink, HTMLStencilElement {
     }
     var HTMLSkLinkElement: {
@@ -120,6 +128,7 @@ declare global {
         new (): HTMLSkTypographyElement;
     };
     interface HTMLElementTagNameMap {
+        "sk-badge": HTMLSkBadgeElement;
         "sk-link": HTMLSkLinkElement;
         "sk-not-found": HTMLSkNotFoundElement;
         "sk-simple-teaser": HTMLSkSimpleTeaserElement;
@@ -132,6 +141,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface SkBadge {
+    }
     interface SkLink {
         "color"?: string;
         "href"?: string;
@@ -191,6 +202,7 @@ declare namespace LocalJSX {
         "size"?: string;
     }
     interface IntrinsicElements {
+        "sk-badge": SkBadge;
         "sk-link": SkLink;
         "sk-not-found": SkNotFound;
         "sk-simple-teaser": SkSimpleTeaser;
@@ -206,6 +218,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "sk-badge": LocalJSX.SkBadge & JSXBase.HTMLAttributes<HTMLSkBadgeElement>;
             "sk-link": LocalJSX.SkLink & JSXBase.HTMLAttributes<HTMLSkLinkElement>;
             "sk-not-found": LocalJSX.SkNotFound & JSXBase.HTMLAttributes<HTMLSkNotFoundElement>;
             "sk-simple-teaser": LocalJSX.SkSimpleTeaser & JSXBase.HTMLAttributes<HTMLSkSimpleTeaserElement>;

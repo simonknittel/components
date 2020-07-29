@@ -22,7 +22,7 @@ export class SimpleTeaser {
             {this.heading}
 
             {this.badge &&
-              <span class="badge">{this.badge}</span>
+              <sk-badge>{ this.badge }</sk-badge>
             }
           </sk-typography>
           <sk-tag-list items={this.tags} />
