@@ -25,3 +25,5 @@ Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de)
 5. `npm run build`
 6. `npm publish`
 7. Create a new [(pre-)release on GitHub](https://github.com/simonknittel/components/releases/new)
+8. `cd ../`
+9. `sh update-gh-pages.sh`
