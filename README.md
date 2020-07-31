@@ -20,10 +20,12 @@ Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de)
 
 1. Stage and commit the latest changes
 2. Bump version of [stencil/package.json](./stencil/package.json) and [stencil/package-lock.json](./stencil/package-lock.json)
-3. Create tag and push
-4. `cd stencil`
-5. `npm run build`
-6. `npm publish`
-7. Create a new [(pre-)release on GitHub](https://github.com/simonknittel/components/releases/new)
-8. `cd ../`
-9. `sh update-gh-pages.sh`
+3. Update CHANGELOG.md
+4. `git add -A && git commit -m 'Bump to vX.X.X' && git push`
+5. `git tag vX.X.X && git push --tags`
+6. Create a new [(pre-)release on GitHub](https://github.com/simonknittel/components/releases/new)
+7. `cd stencil`
+8. `npm run build`
+9. `npm publish`
+10. `cd ../`
+11. `sh update-gh-pages.sh`
