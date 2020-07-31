@@ -7,6 +7,10 @@ import gh from 'hast-util-sanitize/lib/github'
 
 import githubMarkdownCSS from '!!raw-loader!./github-markdown.css'
 
+/**
+ * Converts a Markdown string to a HTML string
+ * @param {string} rawMarkdown
+ */
 export function markdownToHTML(rawMarkdown) {
   const sanitizeOptions = gh
 
@@ -20,13 +24,21 @@ export function markdownToHTML(rawMarkdown) {
   return htmlString
 }
 
-export function styleMarkdown(htmlString) {
-  return `<style>${githubMarkdownCSS}</style><div class="markdown-body">${htmlString}</div>`
+/**
+ * Wraps a HTML string with GitHub's CSS styling for Markdown files
+ * @param {string} html
+ */
+export function styleMarkdown(html) {
+  return `<style>${githubMarkdownCSS}</style><div class="markdown-body">${html}</div>`
 }
 
-export function htmlStringToElement(htmlString) {
+/**
+ * Converts a HTML string to a JavaScript HTMLElement
+ * @param {string} html
+ */
+export function htmlToElement(html) {
   const wrapper = document.createElement('div')
-  wrapper.innerHTML = htmlString.trim()
+  wrapper.innerHTML = html.trim()
   const component = wrapper.firstChild
   return component
 }

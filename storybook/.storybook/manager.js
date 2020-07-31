@@ -3,4 +3,5 @@ import customTheme from './custom-theme'
 
 addons.setConfig({
   theme: customTheme,
+  selectedPanel: 'storybookjs/knobs/panel',
 });

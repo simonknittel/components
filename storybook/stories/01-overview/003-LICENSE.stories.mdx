@@ -1,0 +1,8 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+import { markdownToHTML, styleMarkdown } from '../utils.js'
+import LICENSE from '../../../LICENSE.md'
+
+<Meta title="Overview/License" />
+
+<div dangerouslySetInnerHTML={{__html: styleMarkdown(markdownToHTML(LICENSE))}}></div>

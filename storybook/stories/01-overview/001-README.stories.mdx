@@ -1,0 +1,8 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+import { markdownToHTML, styleMarkdown } from '../utils.js'
+import README from '../../../README.md'
+
+<Meta title="Overview/Welcome" />
+
+<div dangerouslySetInnerHTML={{__html: styleMarkdown(markdownToHTML(README))}}></div>
