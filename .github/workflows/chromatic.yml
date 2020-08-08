@@ -19,12 +19,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: ls -la
-    - run: cd stencil/
-    - run: ls -la
-    - run: npm ci
-    - run: npm run build
-    - run: cd ../storybook
-    - run: ls -la
-    - run: npm ci
-    - run: npm run chromatic
+    - run: |
+        ls -la
+        cd stencil/
+        ls -la
+        npm ci
+        npm run build
+        cd ../storybook
+        ls -la
+        npm ci
+        npm run chromatic
