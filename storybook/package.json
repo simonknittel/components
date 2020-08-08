@@ -2,7 +2,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006 -s ../stencil/www",
     "build-storybook": "build-storybook -s ../stencil/www",
-    "start": "npm run storybook"
+    "start": "npm run storybook",
+    "chromatic": "npx chromatic --project-token 4gu23xisxtd"
   },
   "devDependencies": {
     "@storybook/addon-backgrounds": "5.3.19",
@@ -16,6 +17,7 @@
     "@storybook/web-components": "5.3.19",
     "@whitespace/storybook-addon-html": "^1.2.1",
     "babel-loader": "8.1.0",
+    "chromatic": "^5.1.0",
     "lit-html": "1.2.1"
   },
   "dependencies": {
