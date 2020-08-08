@@ -15,13 +15,13 @@ jobs:
       with:
         node-version: '14'
         registry-url: 'https://npm.pkg.github.com'
-    - run:
-        cd stencil/
-        npm ci
-        npm run build
+    - run: npm ci
+      working-directory: stencil
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: |
-        cd storybook/
-        npm ci
-        npm run chromatic
+    - run: npm run build
+      working-directory: stencil
+    - run: npm ci
+      working-directory: storybook
+    - run: npm run chromatic
+      working-directory: storybook
