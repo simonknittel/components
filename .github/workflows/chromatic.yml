@@ -1,4 +1,4 @@
-name: Push latest master to Chromatic
+name: Push master to Chromatic
 
 on:
   push:
@@ -9,23 +9,19 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: |
-        ls -la
+        node-version: '14'
+        registry-url: 'https://npm.pkg.github.com'
+    - run:
         cd stencil/
-        ls -la
         npm ci
         npm run build
-        cd ../storybook
-        ls -la
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: |
+        cd storybook/
         npm ci
         npm run chromatic
