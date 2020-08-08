@@ -4,7 +4,7 @@
 [![GitHub](https://img.shields.io/github/license/simonknittel/components?style=flat-square)](https://github.com/simonknittel/components/blob/master/LICENSE)
 [![David (path)](https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square)](https://github.com/simonknittel/components/blob/master/stencil/package.json)
 [![Chromatic (Visual Regression Testing)](https://img.shields.io/badge/visual%20regression%20testing-Chromatic-green?style=flat-square)](https://www.chromatic.com/builds?appId=5f2e5d00adfe5000223569a2&branch=master)
-[![Storybook](https://img.shields.io/badge/website-Storybook-green?style=flat-square)](https://simonknittel.github.io/components/)
+[![Storybook](https://img.shields.io/badge/documentation-Storybook-green?style=flat-square)](https://simonknittel.github.io/components/)
 
 Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de). Makes use of [Stencil](https://stenciljs.com) and [Storybook](https://github.com/storybookjs/storybook/tree/next/app/web-components).
 
