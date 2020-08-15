@@ -15,6 +15,8 @@ export class SimpleTeaser {
   @Prop() linkText: string
 
   render() {
+    console.warn('sk-simple-teaser: This component is deprecated and will be removed in a future release.')
+
     return (
       <Host>
         <div class="text">
@@ -26,11 +28,11 @@ export class SimpleTeaser {
             }
           </sk-typography>
 
-          <sk-tag-list>
+          <div class="tags">
             {this.tags.map(item =>
               <sk-tag>{item}</sk-tag>
             )}
-          </sk-tag-list>
+          </div>
 
           <slot />
         </div>
@@ -46,5 +48,4 @@ export class SimpleTeaser {
       </Host>
     );
   }
-
 }

@@ -55,8 +55,6 @@ export namespace Components {
     }
     interface SkTag {
     }
-    interface SkTagList {
-    }
     interface SkTypography {
         "as": string;
         "color": string;
@@ -113,12 +111,6 @@ declare global {
         prototype: HTMLSkTagElement;
         new (): HTMLSkTagElement;
     };
-    interface HTMLSkTagListElement extends Components.SkTagList, HTMLStencilElement {
-    }
-    var HTMLSkTagListElement: {
-        prototype: HTMLSkTagListElement;
-        new (): HTMLSkTagListElement;
-    };
     interface HTMLSkTypographyElement extends Components.SkTypography, HTMLStencilElement {
     }
     var HTMLSkTypographyElement: {
@@ -134,7 +126,6 @@ declare global {
         "sk-slanted-teaser": HTMLSkSlantedTeaserElement;
         "sk-social-link": HTMLSkSocialLinkElement;
         "sk-tag": HTMLSkTagElement;
-        "sk-tag-list": HTMLSkTagListElement;
         "sk-typography": HTMLSkTypographyElement;
     }
 }
@@ -189,8 +180,6 @@ declare namespace LocalJSX {
     }
     interface SkTag {
     }
-    interface SkTagList {
-    }
     interface SkTypography {
         "as"?: string;
         "color"?: string;
@@ -206,7 +195,6 @@ declare namespace LocalJSX {
         "sk-slanted-teaser": SkSlantedTeaser;
         "sk-social-link": SkSocialLink;
         "sk-tag": SkTag;
-        "sk-tag-list": SkTagList;
         "sk-typography": SkTypography;
     }
 }
@@ -222,7 +210,6 @@ declare module "@stencil/core" {
             "sk-slanted-teaser": LocalJSX.SkSlantedTeaser & JSXBase.HTMLAttributes<HTMLSkSlantedTeaserElement>;
             "sk-social-link": LocalJSX.SkSocialLink & JSXBase.HTMLAttributes<HTMLSkSocialLinkElement>;
             "sk-tag": LocalJSX.SkTag & JSXBase.HTMLAttributes<HTMLSkTagElement>;
-            "sk-tag-list": LocalJSX.SkTagList & JSXBase.HTMLAttributes<HTMLSkTagListElement>;
             "sk-typography": LocalJSX.SkTypography & JSXBase.HTMLAttributes<HTMLSkTypographyElement>;
         }
     }

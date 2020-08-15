@@ -24,7 +24,6 @@
 
 - [sk-typography](../typography)
 - [sk-badge](../badge)
-- [sk-tag-list](../tag-list)
 - [sk-tag](../tag)
 
 ### Graph
@@ -32,7 +31,6 @@
 graph TD;
   sk-slanted-teaser --> sk-typography
   sk-slanted-teaser --> sk-badge
-  sk-slanted-teaser --> sk-tag-list
   sk-slanted-teaser --> sk-tag
   sk-badge --> sk-typography
   sk-tag --> sk-typography

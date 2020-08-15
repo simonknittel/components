@@ -26,11 +26,11 @@ export class SimpleTeaser {
             }
           </sk-typography>
 
-          <sk-tag-list>
+          <div class="tags">
             {this.tags.map(item =>
               <sk-tag>{item}</sk-tag>
             )}
-          </sk-tag-list>
+          </div>
 
           <slot />
         </div>

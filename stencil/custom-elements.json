@@ -197,11 +197,6 @@
       "events": []
     },
     {
-      "name": "sk-tag-list",
-      "properties": [],
-      "events": []
-    },
-    {
       "name": "sk-typography",
       "properties": [
         {
