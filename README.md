@@ -6,19 +6,33 @@
 [![Chromatic (Visual Regression Testing)](https://img.shields.io/badge/visual%20regression%20testing-Chromatic-green?style=flat-square)](https://www.chromatic.com/builds?appId=5f2e5d00adfe5000223569a2&branch=master)
 [![Storybook](https://img.shields.io/badge/documentation-Storybook-green?style=flat-square)](https://simonknittel.github.io/components/)
 
-Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de). Makes use of [Stencil](https://stenciljs.com) and [Storybook](https://github.com/storybookjs/storybook/tree/next/app/web-components).
+This repository contains the interface component library for my personal website ([link to repo](https://github.com/simonknittel/homepage)). Under the hood the library makes use of [Stencil](https://stenciljs.com) for Web Components.
 
-## Build and watch components
+**Disclaimer:** Like my personal website, this component library is still under heavy development, so regular breaking changes can be expected. This won't change until version 1.0 releases.
+
+## Links
+
+* [Documentation via Storybook](https://simonknittel.github.io/components/)
+  * Overview of all components and instrctions on how to use them
+  * Reflects the latest published release
+* [Visual Regression Testing via Chromatic](https://www.chromatic.com/builds?appId=5f2e5d00adfe5000223569a2&branch=master)
+  * Tests each commit to the `master` branch
+* [Components "live in action" on my personal website](https://nightly.simonknittel.de)
+  * Uses the latest commit of the `master` branch
+
+## Contributing
+
+### Build and watch components with Stencil
 
     cd stencil
     npm start
 
-## Build, watch and serve stories
+### Build, watch and serve stories with Storybook
 
     cd storybook
     npm start
 
-## Build and publish a new version
+### Build and publish a new version
 
 1. Stage and commit the latest changes
 2. Bump version of [stencil/package.json](./stencil/package.json) and [stencil/package-lock.json](./stencil/package-lock.json)
@@ -32,7 +46,9 @@ Component library for [nightly.simonknittel.de](https://nightly.simonknittel.de)
 10. `cd ../`
 11. `sh update-gh-pages.sh`
 
-## How to link your local project repository with a local copy of this repository
+### How to link your local project repository with a local copy of this repository
+
+Linking a local copy of this component library with a local project repository which uses the component library can be helpful when working on components and so see how they behave in real usage outside of Storybook.
 
 1. Open a terminal within your local copy of this repository
 2. Run `npm link`
