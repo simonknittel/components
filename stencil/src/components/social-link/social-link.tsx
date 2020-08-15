@@ -7,11 +7,12 @@ import { Component, h, Prop, getAssetPath } from '@stencil/core';
   assetsDirs: ['assets'],
 })
 export class SocialLink {
-  @Prop() url: string
+  @Prop() href: string
   @Prop() text: string
   @Prop() icon: string
   @Prop() compact: boolean = false
   @Prop() compactOnSmall: boolean = false
+  @Prop() titleAttr: string = ''
 
   render() {
     const viewbox = {
@@ -25,13 +26,14 @@ export class SocialLink {
 
     return (
       <a
-        href={this.url}
+        href={this.href}
         target="_blank"
         rel="noopener"
         class={{
           compact: this.compact,
           'compact-on-small': this.compactOnSmall,
         }}
+        title={this.titleAttr}
       >
         <span class="icon">
           <svg viewBox={"0 0 " + viewbox[this.icon]}>

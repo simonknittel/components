@@ -175,6 +175,10 @@
           "defaultValue": "false"
         },
         {
+          "name": "href",
+          "type": "string"
+        },
+        {
           "name": "icon",
           "type": "string"
         },
@@ -183,8 +187,10 @@
           "type": "string"
         },
         {
-          "name": "url",
-          "type": "string"
+          "name": "titleAttr",
+          "type": "string",
+          "default": "''",
+          "defaultValue": "''"
         }
       ],
       "events": []

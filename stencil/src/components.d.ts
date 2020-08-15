@@ -49,9 +49,10 @@ export namespace Components {
     interface SkSocialLink {
         "compact": boolean;
         "compactOnSmall": boolean;
+        "href": string;
         "icon": string;
         "text": string;
-        "url": string;
+        "titleAttr": string;
     }
     interface SkTag {
         "text": string;
@@ -184,9 +185,10 @@ declare namespace LocalJSX {
     interface SkSocialLink {
         "compact"?: boolean;
         "compactOnSmall"?: boolean;
+        "href"?: string;
         "icon"?: string;
         "text"?: string;
-        "url"?: string;
+        "titleAttr"?: string;
     }
     interface SkTag {
         "text"?: string;

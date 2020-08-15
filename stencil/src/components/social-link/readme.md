@@ -11,9 +11,10 @@
 | ---------------- | ------------------ | ----------- | --------- | ----------- |
 | `compact`        | `compact`          |             | `boolean` | `false`     |
 | `compactOnSmall` | `compact-on-small` |             | `boolean` | `false`     |
+| `href`           | `href`             |             | `string`  | `undefined` |
 | `icon`           | `icon`             |             | `string`  | `undefined` |
 | `text`           | `text`             |             | `string`  | `undefined` |
-| `url`            | `url`              |             | `string`  | `undefined` |
+| `titleAttr`      | `title-attr`       |             | `string`  | `''`        |
 
 
 ## Dependencies
