@@ -28,7 +28,7 @@ export class SimpleTeaser {
 
           <sk-tag-list>
             {this.tags.map(item =>
-              <sk-tag text={item}></sk-tag>
+              <sk-tag>{item}</sk-tag>
             )}
           </sk-tag-list>
 

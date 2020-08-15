@@ -5,13 +5,6 @@
 <!-- Auto Generated Below -->
 
 
-## Properties
-
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `text`   | `text`    |             | `string` | `undefined` |
-
-
 ## Dependencies
 
 ### Used by

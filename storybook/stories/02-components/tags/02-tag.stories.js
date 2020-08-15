@@ -1,4 +1,5 @@
 import { withKnobs, text } from "@storybook/addon-knobs";
+import { htmlToElement } from '../../utils.js';
 
 export default {
   title: 'Components/Tags/sk-tag',
@@ -7,9 +8,13 @@ export default {
 }
 
 export function playground() {
-  const el = document.createElement('sk-tag')
-  el.text = text('Text', 'Lorem ipsum')
-  return el
+  const component = htmlToElement(`
+    <sk-tag>
+      ${text('Text', 'Lorem ipsum')}
+    </sk-tag>
+  `)
+
+  return component
 }
 
 playground.story = {
@@ -22,10 +27,15 @@ playground.story = {
 }
 
 export function onBlack() {
-  const el = document.createElement('sk-tag')
-  el.text = text('Text', 'Lorem ipsum')
-  el.style = '--sk-tag-border-color: rgba(#fc0, .5); --sk-tag-color: #fc0'
-  return el
+  const component = htmlToElement(`
+    <sk-tag>
+      ${text('Text', 'Lorem ipsum')}
+    </sk-tag>
+  `)
+
+  component.style = '--sk-tag-border-color: rgba(#fc0, .5); --sk-tag-color: #fc0'
+
+  return component
 }
 
 onBlack.story = {

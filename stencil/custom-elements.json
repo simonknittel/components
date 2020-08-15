@@ -197,12 +197,7 @@
     },
     {
       "name": "sk-tag",
-      "properties": [
-        {
-          "name": "text",
-          "type": "string"
-        }
-      ],
+      "properties": [],
       "events": []
     },
     {

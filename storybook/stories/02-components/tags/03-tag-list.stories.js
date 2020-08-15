@@ -1,4 +1,5 @@
-import { withKnobs, array } from "@storybook/addon-knobs";
+import { withKnobs, text } from "@storybook/addon-knobs";
+import { htmlToElement } from '../../utils.js';
 
 export default {
   title: 'Components/Tags/sk-tag-list',
@@ -7,9 +8,19 @@ export default {
 }
 
 export function playground() {
-  const el = document.createElement('sk-tag-list')
-  el.items = array('Items', ['Lorem ipsum', 'Dolor sit amet'])
-  return el
+  const component = htmlToElement(`
+    <sk-tag-list>
+      <sk-tag>
+        ${text('Tag 1', 'Lorem ipsum')}
+      </sk-tag>
+
+      <sk-tag>
+        ${text('Tag 2', 'Dolor sit amet')}
+      </sk-tag>
+    </sk-tag-list>
+  `)
+
+  return component
 }
 
 playground.story = {
