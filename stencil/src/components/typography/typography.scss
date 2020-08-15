@@ -16,8 +16,13 @@
 
 .size- {
   &12-responsive {
-    font-size: 0.75rem;
-    @media (min-width: $bp--small) {}
+    font-size: 0.55rem;
+    @media (min-width: $bp--small) { font-size: 0.75rem; }
+  }
+
+  &14-responsive {
+    font-size: 0.675rem;
+    @media (min-width: $bp--small) { font-size: 0.875rem; }
   }
 
   // 16-responsive (default)

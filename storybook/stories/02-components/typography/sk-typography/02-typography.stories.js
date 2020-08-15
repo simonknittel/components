@@ -10,7 +10,7 @@ export default {
     } },
     size: { control: {
       type: 'select',
-      options: ['16-responsive', '24-responsive', '32-responsive', '112-responsive'],
+      options: ['12-responsive', '14-responsive', '16-responsive', '24-responsive', '32-responsive', '112-responsive'],
     } },
     color: { control: {
       type: 'select',

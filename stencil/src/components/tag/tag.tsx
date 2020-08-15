@@ -9,7 +9,7 @@ export class Tag {
   render() {
     return (
       <Host>
-        <sk-typography size="12-responsive"><slot /></sk-typography>
+        <sk-typography size="14-responsive"><slot /></sk-typography>
       </Host>
     )
   }

@@ -13,7 +13,7 @@ export class Typography {
 
   // @Watch('size')
   // watchSize(newValue: string) {
-  //   if (['12-responsive', '16-responsive', '24-responsive', '32-responsive', '112-responsive', '', undefined, null].indexOf(newValue) === -1) {
+  //   if (['12-responsive', '14-responsive', '16-responsive', '24-responsive', '32-responsive', '112-responsive', '', undefined, null].indexOf(newValue) === -1) {
   //     console.warn(`sk-typography (size): Unknown value: ${newValue} - Allowed values: 12-responsive, 16-responsive (default), 24-responsive, 32-responsive and 112-responsive`)
   //   }
   // }
@@ -48,7 +48,7 @@ export class Typography {
       classArray.push('color-' + this.color)
     }
 
-    if (['12-responsive', '16-responsive', '24-responsive', '32-responsive', '112-responsive', '', undefined, null].indexOf(this.size) === -1) {
+    if (['12-responsive', '14-responsive', '16-responsive', '24-responsive', '32-responsive', '112-responsive', '', undefined, null].indexOf(this.size) === -1) {
       console.warn(`sk-typography (size): Unknown value: ${ this.size } - Allowed values: 12-responsive, 16-responsive (default), 24-responsive, 32-responsive and 112-responsive`)
     } else {
       classArray.push('line-height-' + this.lineHeight)
