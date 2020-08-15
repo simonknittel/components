@@ -14,10 +14,13 @@ export function playground(args) {
 
 playground.story = {
   parameters: {
-    backgrounds: [
-      { name: 'white', value: '#fff5cc', default: true },
-      { name: 'yellow', value: '#fc0' },
-    ],
+    backgrounds: {
+      default: 'white',
+      values: [
+        { name: 'white', value: '#fff5cc' },
+        { name: 'yellow', value: '#fc0' },
+      ],
+    },
   },
 }
 
@@ -33,9 +36,12 @@ export function onBlack(args) {
 
 onBlack.story = {
   parameters: {
-    backgrounds: [
-      { name: 'black', value: '#222', default: true },
-    ],
+    backgrounds: {
+      default: 'black',
+      values: [
+        { name: 'black', value: '#222' },
+      ],
+    },
   },
 }
 

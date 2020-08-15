@@ -11,9 +11,12 @@ export function playground(args) {
 
 playground.story = {
   parameters: {
-    backgrounds: [
-      { name: 'black', value: '#222', default: true },
-    ],
+    backgrounds: {
+      default: 'black',
+      values: [
+        { name: 'black', value: '#222' },
+      ],
+    },
   },
 }
 
@@ -37,12 +40,15 @@ export function multiple(args) {
 
 multiple.story = {
   parameters: {
-    backgrounds: [
-      { name: 'black', value: '#222', default: true },
-    ],
+    backgrounds: {
+      default: 'black',
+      values: [
+        { name: 'black', value: '#222' },
+      ],
+    },
   },
 }
 
 multiple.args = {
-  compact: true
+  compact: false
 }

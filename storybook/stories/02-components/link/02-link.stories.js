@@ -4,11 +4,14 @@ export default {
   title: 'Components/Link',
   component: 'sk-link',
   parameters: {
-    backgrounds: [
-      { name: 'white', value: '#fff5cc', default: true },
-      { name: 'yellow', value: '#fc0' },
-      { name: 'black', value: '#222' },
-    ],
+    backgrounds: {
+      default: 'white',
+      values: [
+        { name: 'white', value: '#fff5cc' },
+        { name: 'yellow', value: '#fc0' },
+        { name: 'black', value: '#222' },
+      ],
+    },
   },
   argTypes: {
     iconPosition: { control: {

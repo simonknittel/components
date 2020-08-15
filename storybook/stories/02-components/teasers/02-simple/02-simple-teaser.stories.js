@@ -15,9 +15,12 @@ export function playground(args) {
 
 playground.story = {
   parameters: {
-    backgrounds: [
-      { name: 'yellow', value: '#fc0', default: true },
-    ],
+    backgrounds: {
+      default: 'yellow',
+      values: [
+        { name: 'yellow', value: '#fc0' },
+      ],
+    },
   },
 }
 

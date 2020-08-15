@@ -30,10 +30,14 @@ export function playground(args) {
 
 playground.story = {
   parameters: {
-    backgrounds: [
-      { name: 'yellow', value: '#fff5cc', default: true },
-      { name: 'yellow', value: '#fc0' },
-    ],
+    backgrounds: {
+      default: 'white',
+      values: [
+        { name: 'white', value: '#fff5cc' },
+        { name: 'yellow', value: '#fc0' },
+        { name: 'black', value: '#222' },
+      ],
+    },
   },
 }
 

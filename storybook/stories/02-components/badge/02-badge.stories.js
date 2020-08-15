@@ -4,10 +4,13 @@ export default {
   title: 'Components/Badge',
   component: 'sk-badge',
   parameters: {
-    backgrounds: [
-      { name: 'white', value: '#fff5cc', default: true },
-      { name: 'yellow', value: '#fc0' },
-    ],
+    backgrounds: {
+      default: 'white',
+      values: [
+        { name: 'white', value: '#fff5cc' },
+        { name: 'yellow', value: '#fc0' },
+      ],
+    },
   },
   argTypes: {
     innerHTML: { control: 'text' },
