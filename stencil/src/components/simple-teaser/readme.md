@@ -24,13 +24,14 @@
 
 - [sk-typography](../typography)
 - [sk-tag-list](../tag-list)
+- [sk-tag](../tag)
 
 ### Graph
 ```mermaid
 graph TD;
   sk-simple-teaser --> sk-typography
   sk-simple-teaser --> sk-tag-list
-  sk-tag-list --> sk-tag
+  sk-simple-teaser --> sk-tag
   sk-tag --> sk-typography
   style sk-simple-teaser fill:#f9f,stroke:#333,stroke-width:4px
 ```

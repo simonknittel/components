@@ -25,7 +25,13 @@ export class SimpleTeaser {
               <sk-badge>{ this.badge }</sk-badge>
             }
           </sk-typography>
-          <sk-tag-list items={this.tags} />
+
+          <sk-tag-list>
+            {this.tags.map(item =>
+              <sk-tag text={item}></sk-tag>
+            )}
+          </sk-tag-list>
+
           <slot />
         </div>
 

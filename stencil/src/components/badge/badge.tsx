@@ -8,7 +8,7 @@ import { Component, h } from '@stencil/core';
 export class Badge {
   render() {
     return (
-      <sk-typography><slot /></sk-typography>
+      <sk-typography size="12-responsive" color="yellow"><slot /></sk-typography>
     );
   }
 }

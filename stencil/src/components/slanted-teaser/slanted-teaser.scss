@@ -27,6 +27,7 @@
     width: calc(100% - 1.6rem);
     height: 100%;
 
+    border-radius: .3rem;
     background-color: var(--sk-slanted-teaser-text-background-color, $yellow);
   }
 }
@@ -34,14 +35,17 @@
 .heading {
   display: block;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 sk-badge {
+  position: relative;
+  top: -.1rem;
+
   margin-left: 0.5rem;
 }
 
-.tags {
+sk-tag-list {
   margin-bottom: .5rem;
 }
 
@@ -69,6 +73,7 @@ sk-badge {
     width: calc(100% - 1.6rem);
     height: 100%;
 
+    border-radius: .3rem;
     background-color: var(--sk-slanted-teaser-link-background-color, $black);
   }
 

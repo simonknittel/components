@@ -16,7 +16,8 @@
 
 ### Used by
 
- - [sk-tag-list](../tag-list)
+ - [sk-simple-teaser](../simple-teaser)
+ - [sk-slanted-teaser](../slanted-teaser)
 
 ### Depends on
 
@@ -26,7 +27,8 @@
 ```mermaid
 graph TD;
   sk-tag --> sk-typography
-  sk-tag-list --> sk-tag
+  sk-simple-teaser --> sk-tag
+  sk-slanted-teaser --> sk-tag
   style sk-tag fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

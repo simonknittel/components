@@ -11,7 +11,7 @@ export class Tag {
   render() {
     return (
       <Host>
-        <sk-typography>{this.text}</sk-typography>
+        <sk-typography size="12-responsive">{this.text}</sk-typography>
       </Host>
     )
   }

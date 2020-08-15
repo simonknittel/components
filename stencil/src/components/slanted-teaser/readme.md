@@ -25,6 +25,7 @@
 - [sk-typography](../typography)
 - [sk-badge](../badge)
 - [sk-tag-list](../tag-list)
+- [sk-tag](../tag)
 
 ### Graph
 ```mermaid
@@ -32,8 +33,8 @@ graph TD;
   sk-slanted-teaser --> sk-typography
   sk-slanted-teaser --> sk-badge
   sk-slanted-teaser --> sk-tag-list
+  sk-slanted-teaser --> sk-tag
   sk-badge --> sk-typography
-  sk-tag-list --> sk-tag
   sk-tag --> sk-typography
   style sk-slanted-teaser fill:#f9f,stroke:#333,stroke-width:4px
 ```

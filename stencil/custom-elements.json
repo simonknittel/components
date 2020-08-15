@@ -201,12 +201,7 @@
     },
     {
       "name": "sk-tag-list",
-      "properties": [
-        {
-          "name": "items",
-          "type": "string[]"
-        }
-      ],
+      "properties": [],
       "events": []
     },
     {

@@ -57,7 +57,6 @@ export namespace Components {
         "text": string;
     }
     interface SkTagList {
-        "items": Array<string>;
     }
     interface SkTypography {
         "as": string;
@@ -193,7 +192,6 @@ declare namespace LocalJSX {
         "text"?: string;
     }
     interface SkTagList {
-        "items"?: Array<string>;
     }
     interface SkTypography {
         "as"?: string;
