@@ -9,7 +9,7 @@ export class Typography {
   @Prop() as: string = 'span'
   @Prop() size: string = '16-responsive'
   @Prop() color: string = 'inherit'
-  @Prop() lineHeight: string = '1.2'
+  @Prop() lineHeight: string = '1.5'
 
   // @Watch('size')
   // watchSize(newValue: string) {
@@ -29,7 +29,7 @@ export class Typography {
   // watchLineHeight(newValue: string) {
   //   console.log('validateLineHeight', newValue)
   //   if (['1', '1.2', '1.5', '', undefined, null].indexOf(newValue) === -1) {
-  //     console.warn(`sk-typography (lineHeight): Unknown value: ${newValue} - Allowed values: 1, 1.2 (default), and 1.5`)
+  //     console.warn(`sk-typography (lineHeight): Unknown value: ${newValue} - Allowed values: 1, 1.2 and 1.5 (default)`)
   //   }
   // }
 
@@ -37,9 +37,9 @@ export class Typography {
     const classArray = []
 
     if (['1', '1.2', '1.5', '', undefined, null].indexOf(this.lineHeight) === -1) {
-      console.warn(`sk-typography (lineHeight): Unknown value: ${ this.lineHeight } - Allowed values: 1, 1.2 (default), and 1.5`)
+      console.warn(`sk-typography (lineHeight): Unknown value: ${ this.lineHeight } - Allowed values: 1, 1.2 and 1.5 (default)`)
     } else {
-      classArray.push('size-' + this.size)
+      classArray.push('line-height-' + this.lineHeight.replace('.', ''))
     }
 
     if (['inherit', 'yellow', 'black', 'light-black', 'white', '', undefined, null].indexOf(this.color) === -1) {
@@ -51,7 +51,7 @@ export class Typography {
     if (['12-responsive', '14-responsive', '16-responsive', '24-responsive', '32-responsive', '112-responsive', '', undefined, null].indexOf(this.size) === -1) {
       console.warn(`sk-typography (size): Unknown value: ${ this.size } - Allowed values: 12-responsive, 16-responsive (default), 24-responsive, 32-responsive and 112-responsive`)
     } else {
-      classArray.push('line-height-' + this.lineHeight)
+      classArray.push('size-' + this.size)
     }
 
     const classes = classArray.join(' ')

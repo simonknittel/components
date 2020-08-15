@@ -214,8 +214,8 @@
         {
           "name": "lineHeight",
           "type": "string",
-          "default": "'1.2'",
-          "defaultValue": "'1.2'"
+          "default": "'1.5'",
+          "defaultValue": "'1.5'"
         },
         {
           "name": "size",

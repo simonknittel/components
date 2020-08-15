@@ -11,7 +11,7 @@
 | ------------ | ------------- | ----------- | -------- | ----------------- |
 | `as`         | `as`          |             | `string` | `'span'`          |
 | `color`      | `color`       |             | `string` | `'inherit'`       |
-| `lineHeight` | `line-height` |             | `string` | `'1.2'`           |
+| `lineHeight` | `line-height` |             | `string` | `'1.5'`           |
 | `size`       | `size`        |             | `string` | `'16-responsive'` |
 
 

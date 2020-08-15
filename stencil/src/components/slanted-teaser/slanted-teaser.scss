@@ -1,5 +1,7 @@
 @import '../../variables';
 
+$linkHeight: 3.5rem; // 1rem (padding-top + bottom) + 1rem (font-size) * 1.5 (line-height)
+
 *,
 *::before,
 *::after {
@@ -12,7 +14,8 @@
 
 .text {
   position: relative;
-  padding: 2rem 3.8rem 3rem 3.8rem;
+  height: calc(100% - #{$linkHeight / 2});
+  padding: 2rem 3.8rem 3.5rem 3.8rem;
 
   &::before {
     content: "";
@@ -57,9 +60,8 @@ sk-tag {
 .link {
   display: block;
   position: relative;
-  margin-top: -1rem;
+  margin-top: - $linkHeight / 2;
   padding: 1rem 3.8rem;
-  color: $yellow;
   text-align: right;
   text-decoration: none;
 

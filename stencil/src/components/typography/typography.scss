@@ -1,16 +1,13 @@
 @import '../../variables';
 
 :host {
-  font-family: $font;
-  color: inherit;
-
-  // &.block {
-  //   display: block;
-  // }
+  display: block;
 
   > * {
     margin-top: 0;
     margin-bottom: 0;
+
+    font-family: $font;
   }
 }
 
@@ -25,10 +22,11 @@
     @media (min-width: $bp--small) { font-size: 0.875rem; }
   }
 
-  // 16-responsive (default)
-  // font-size: .8rem;
-  font-size: .8rem;
-  @media (min-width: $bp--small) { font-size: 1rem; }
+  // Default
+  &16-responsive {
+    font-size: .8rem;
+    @media (min-width: $bp--small) { font-size: 1rem; }
+  }
 
   &24-responsive {
     font-size: 1.5rem;
@@ -47,8 +45,7 @@
 }
 
 .color- {
-  color: inherit;
-
+  &inherit { color: inherit; } // Default
   &yellow { color: $yellow; }
   &black { color: $black; }
   &light-black { color: $black--light; }
@@ -56,8 +53,11 @@
 }
 
 .line-height- {
-  line-height: 1.2;
+  &1,
+  &12,
+  &15 { display: inline-block; }
 
   &1 { line-height: 1 }
-  &15 { line-height: 1.5 }
+  &12 { line-height: 1.2 }
+  &15 { line-height: 1.5 } // Default
 }

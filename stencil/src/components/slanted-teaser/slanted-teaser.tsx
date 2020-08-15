@@ -41,7 +41,7 @@ export class SimpleTeaser {
           rel={this.rel}
           class="link"
         >
-          <sk-typography>{this.linkText}</sk-typography>
+          <sk-typography color="yellow">{this.linkText}</sk-typography>
         </a>
       </Host>
     );
