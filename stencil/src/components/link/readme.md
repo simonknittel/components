@@ -13,10 +13,9 @@
 | `href`         | `href`          |             | `string`  | `undefined` |
 | `icon`         | `icon`          |             | `string`  | `undefined` |
 | `iconPosition` | `icon-position` |             | `string`  | `'left'`    |
-| `noopener`     | `noopener`      |             | `string`  | `undefined` |
 | `preventClick` | `prevent-click` |             | `boolean` | `false`     |
+| `rel`          | `rel`           |             | `string`  | `undefined` |
 | `target`       | `target`        |             | `string`  | `undefined` |
-| `text`         | `text`          |             | `string`  | `undefined` |
 
 
 ## Events

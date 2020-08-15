@@ -1,27 +1,31 @@
-import { withKnobs, select, text } from '@storybook/addon-knobs';
-import { htmlToElement } from '../../../utils.js';
+import { tagToElement } from '../../../utils.js';
 
 export default {
   title: 'Components/Typography/sk-typography',
   component: 'sk-typography',
-  decorators: [withKnobs],
+  argTypes: {
+    as: { control: {
+      type: 'select',
+      options: ['span', 'p', 'h3'],
+    } },
+    size: { control: {
+      type: 'select',
+      options: ['16-responsive', '24-responsive', '32-responsive', '112-responsive'],
+    } },
+    color: { control: {
+      type: 'select',
+      options: ['inherit', 'yellow', 'black', 'light-black', 'white'],
+    } },
+    lineHeight: { control: {
+      type: 'select',
+      options: ['1', '1.2', '1.5'],
+    } },
+    innerHTML: { control: 'text' },
+  },
 }
 
-export function playground() {
-  const component = htmlToElement(`
-    <sk-typography
-      as=${select('as', ['p', 'h3'], 'p')}
-      size=${select('size', ['16-responsive', '24-responsive', '32-responsive', '112-responsive'], '16-responsive')}
-      color=${select('color', ['inherit', 'yellow', 'black', 'light-black', 'white'], 'inherit')}
-      line-height=${select('lineHeight', ['1', '1.2', '1.5'], '1.2')}
-    >
-      ${text('innerHTML', 'Lorem ipsum')}
-    </sk-typography>
-  `)
-
-  component.addEventListener('clicked', e => console.log('clicked(e)', e))
-
-  return component
+export function playground(args) {
+  return tagToElement('sk-typography', args)
 }
 
 playground.story = {
@@ -30,6 +34,9 @@ playground.story = {
       { name: 'yellow', value: '#fff5cc', default: true },
       { name: 'yellow', value: '#fc0' },
     ],
-    // options: { selectedPanel: 'storybook/canvas/panel' },
   },
+}
+
+playground.args = {
+  innerHTML: 'Lorem ipsum',
 }

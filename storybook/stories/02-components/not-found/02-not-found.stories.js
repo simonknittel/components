@@ -1,23 +1,12 @@
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
-import { htmlToElement } from '../../utils.js';
+import { tagToElement } from '../../utils.js';
 
 export default {
   title: 'Components/Not found',
   component: 'sk-not-found',
-  decorators: [withKnobs],
 }
 
-export function playground() {
-  const component = htmlToElement(`
-    <sk-not-found
-      heading="${text('Heading', '404')}"
-      subheading="${text('Subheading', 'Page not found')}"
-      link-href="${text('Link href', '#')}"
-      link-icon="${text('Link icon', '<')}"
-      link-text="${text('Link text', 'Go to home')}"
-      link-prevent-click="${boolean('Link prevent click', false)}"
-    />
-  `)
+export function playground(args) {
+  const component = tagToElement('sk-not-found', args)
 
   component.addEventListener('clicked', e => console.log('clicked(e)', e))
 
@@ -29,8 +18,13 @@ playground.story = {
     backgrounds: [
       { name: 'white', value: '#fff5cc', default: true },
     ],
-    knobs: {
-      escapeHTML: false,
-    }
   },
+}
+
+playground.args = {
+  heading: '404',
+  subheading: 'Page not found',
+  linkHref: '#',
+  linkIcon: '<',
+  linkText: 'Go to home',
 }

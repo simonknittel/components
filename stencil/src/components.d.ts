@@ -13,10 +13,9 @@ export namespace Components {
         "href": string;
         "icon": string;
         "iconPosition": string;
-        "noopener": string;
         "preventClick": boolean;
+        "rel": string;
         "target": string;
-        "text": string;
     }
     interface SkNotFound {
         "heading": string;
@@ -147,11 +146,10 @@ declare namespace LocalJSX {
         "href"?: string;
         "icon"?: string;
         "iconPosition"?: string;
-        "noopener"?: string;
         "onClicked"?: (event: CustomEvent<MouseEvent>) => void;
         "preventClick"?: boolean;
+        "rel"?: string;
         "target"?: string;
-        "text"?: string;
     }
     interface SkNotFound {
         "heading"?: string;

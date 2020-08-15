@@ -1,22 +1,16 @@
-import { withKnobs, array, text } from "@storybook/addon-knobs";
+import { tagToElement } from "../../../utils"
 
 export default {
   title: 'Components/Teasers/Slanted',
   component: 'sk-slanted-teaser',
-  decorators: [withKnobs],
+  argTypes: {
+    innerHTML: { control: 'text' },
+    tags: { control: 'array' },
+  },
 }
 
-export function playground() {
-  const el = document.createElement('sk-slanted-teaser')
-  el.heading = text('Heading', 'Heading')
-  el.badge = text('Badge', 'work in progress')
-  el.tags = array('Items', ['Lorem ipsum', 'Dolor sit amet'])
-  el.innerHTML = text('innerHTML', '<sk-typography as="p">Fugiat ad Lorem exercitation laborum veniam aute cupidatat magna culpa amet aliqua in enim nostrud.</sk-typography>')
-  el.href = text('href', '#')
-  el.target = text('target', '_blank')
-  el.rel = text('rel', 'noopener')
-  el.linkText = text('linkText', 'Link text >')
-  return el
+export function playground(args) {
+  return tagToElement('sk-slanted-teaser', args)
 }
 
 playground.story = {
@@ -24,8 +18,16 @@ playground.story = {
     backgrounds: [
       { name: 'white', value: '#fff5cc', default: true },
     ],
-    knobs: {
-      escapeHTML: false,
-    }
   }
+}
+
+playground.args = {
+  heading: 'Heading',
+  badge: 'work in progress',
+  tags: ['Lorem ipsum', 'Dolor sit amet'],
+  innerHTML: '<sk-typography as="p">Fugiat ad Lorem exercitation laborum veniam aute cupidatat magna culpa amet aliqua in enim nostrud.</sk-typography>',
+  href: '#',
+  target: '_blank',
+  rel: 'noopener',
+  linkText: 'Link text >',
 }

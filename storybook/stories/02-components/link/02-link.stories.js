@@ -1,34 +1,44 @@
-import { withKnobs, text, select } from "@storybook/addon-knobs"
+import { tagToElement } from '../../utils.js'
 
 export default {
   title: 'Components/Link',
   component: 'sk-link',
-  decorators: [withKnobs],
   parameters: {
     backgrounds: [
       { name: 'white', value: '#fff5cc', default: true },
       { name: 'yellow', value: '#fc0' },
       { name: 'black', value: '#222' },
     ],
-    knobs: {
-      escapeHTML: false,
-    },
+  },
+  argTypes: {
+    iconPosition: { control: {
+      type: 'select',
+      options: ['left', 'right'],
+    } },
+    color: { control: {
+      type: 'select',
+      options: ['inherit', 'yellow', 'black', 'light-black', 'white'],
+    } },
+    innerHTML: { control: 'text' },
   },
 }
 
-export function playground() {
-  const el = document.createElement('sk-link')
-  el.href = text('Href', '#')
-  el.target = text('Target', '_blank')
-  el.rel = text('Rel', 'noopener')
-  el.icon = text('Icon', '<')
-  el.iconPosition = select('Icon position', ['left', 'right'], 'left')
-  el.innerHTML = 'Go back'
-  el.color = select('color', ['inherit', 'yellow', 'black', 'light-black', 'white'], 'inherit')
+export function playground(args) {
+  const component = tagToElement('sk-link', args)
 
-  el.addEventListener('clicked', (e) => {
+  component.addEventListener('clicked', (e) => {
     console.log('clicked(e)', e)
   })
 
-  return el
+  return component
+}
+
+playground.args = {
+  href: '#',
+  target: '_blank',
+  rel: 'noopener',
+  icon: '<',
+  iconPosition: 'left',
+  color: 'inherit',
+  innerHTML: 'Go back',
 }

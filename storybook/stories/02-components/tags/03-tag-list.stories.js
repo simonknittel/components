@@ -1,21 +1,23 @@
-import { withKnobs, text } from "@storybook/addon-knobs";
 import { htmlToElement } from '../../utils.js';
 
 export default {
   title: 'Components/Tags/sk-tag-list',
   component: 'sk-tag-list',
-  decorators: [withKnobs],
+  argTypes: {
+    tag1: { control: 'text' },
+    tag2: { control: 'text' },
+  },
 }
 
-export function playground() {
+export function playground(args) {
   const component = htmlToElement(`
     <sk-tag-list>
       <sk-tag>
-        ${text('Tag 1', 'Lorem ipsum')}
+        ${args.tag1}
       </sk-tag>
 
       <sk-tag>
-        ${text('Tag 2', 'Dolor sit amet')}
+      ${args.tag2}
       </sk-tag>
     </sk-tag-list>
   `)
@@ -29,8 +31,10 @@ playground.story = {
       { name: 'white', value: '#fff5cc', default: true },
       { name: 'yellow', value: '#fc0' },
     ],
-    knobs: {
-      escapeHTML: false,
-    }
   }
+}
+
+playground.args = {
+  tag1: 'Lorem ipsum',
+  tag2: 'Dolor sit amet',
 }

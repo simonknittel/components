@@ -29,21 +29,17 @@
           "defaultValue": "'left'"
         },
         {
-          "name": "noopener",
-          "type": "string"
-        },
-        {
           "name": "preventClick",
           "type": "boolean",
           "default": "false",
           "defaultValue": "false"
         },
         {
-          "name": "target",
+          "name": "rel",
           "type": "string"
         },
         {
-          "name": "text",
+          "name": "target",
           "type": "string"
         }
       ],

@@ -33,12 +33,23 @@ export function styleMarkdown(html) {
 }
 
 /**
+ * Creates an JavaScript HTMLElement
+ * @param {string} html
+ */
+export function tagToElement(tag, args = null) {
+  const component = document.createElement(tag)
+  if (args) Object.assign(component, args)
+  return component
+}
+
+/**
  * Converts a HTML string to a JavaScript HTMLElement
  * @param {string} html
  */
-export function htmlToElement(html) {
+export function htmlToElement(html, args = null) {
   const wrapper = document.createElement('div')
   wrapper.innerHTML = html.trim()
   const component = wrapper.firstChild
+  if (args) Object.assign(component, args)
   return component
 }

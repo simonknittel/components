@@ -1,15 +1,15 @@
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { tagToElement } from "../../utils"
 
 export default {
   title: 'Components/Slanted',
   component: 'sk-slanted',
-  decorators: [withKnobs],
+  argTypes: {
+    innerHTML: { control: 'text' },
+  },
 }
 
-export function playground() {
-  const el = document.createElement('sk-slanted')
-  el.innerHTML = text('innerHTML', '<sk-typography>Lorem ipsum</sk-typography>')
-  return el
+export function playground(args) {
+  return tagToElement('sk-slanted', args)
 }
 
 playground.story = {
@@ -18,8 +18,9 @@ playground.story = {
       { name: 'white', value: '#fff5cc', default: true },
       { name: 'yellow', value: '#fc0' },
     ],
-    knobs: {
-      escapeHTML: false,
-    }
   },
+}
+
+playground.args = {
+  innerHTML: '<sk-typography>Lorem ipsum</sk-typography>',
 }

@@ -8,8 +8,7 @@ import { Component, Prop, h, Event, EventEmitter } from '@stencil/core';
 export class Link {
   @Prop() href: string
   @Prop() target: string
-  @Prop() noopener: string
-  @Prop() text: string
+  @Prop() rel: string
   @Prop() icon: string
   @Prop() iconPosition: string = 'left'
   @Prop() color: string = 'inherit'
@@ -40,7 +39,7 @@ export class Link {
       <a
         href={ this.href }
         target={ this.target }
-        rel={ this.noopener }
+        rel={ this.rel }
         class={ classArray.join(' ') }
         onClick={ this.onClick.bind(this) }
       >

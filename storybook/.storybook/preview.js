@@ -17,9 +17,6 @@ addParameters({
   docs: {
     iframeHeight: '200px',
   },
-  options: {
-    showRoots: true,
-  },
 });
 
 // force full reload to not reregister web components

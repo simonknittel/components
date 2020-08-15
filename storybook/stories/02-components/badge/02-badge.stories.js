@@ -1,27 +1,23 @@
-import { withKnobs, text } from '@storybook/addon-knobs'
-import { htmlToElement } from '../../utils.js';
+import { tagToElement } from '../../utils.js';
 
 export default {
   title: 'Components/Badge',
   component: 'sk-badge',
-  decorators: [withKnobs],
   parameters: {
     backgrounds: [
       { name: 'white', value: '#fff5cc', default: true },
       { name: 'yellow', value: '#fc0' },
     ],
-    knobs: {
-      escapeHTML: false,
-    },
+  },
+  argTypes: {
+    innerHTML: { control: 'text' },
   },
 }
 
-export function playground() {
-  const component = htmlToElement(`
-    <sk-badge>
-      ${text('Text', 'Lorem ipsum')}
-    </sk-badge>
-  `)
+export function playground(args) {
+  return tagToElement('sk-badge', args)
+}
 
-  return component
+playground.args = {
+  innerHTML: 'Lorem ipsum'
 }
