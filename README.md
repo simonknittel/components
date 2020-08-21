@@ -23,7 +23,7 @@
 ## Links
 
 * [Documentation via Storybook](https://simonknittel.github.io/components/)
-  * Overview of all components and instrctions on how to use them
+  * Overview of all components and instructions on how to use them
   * Reflects the latest published release
 * [Visual Regression Testing via Chromatic](https://www.chromatic.com/builds?appId=5f2e5d00adfe5000223569a2&branch=master)
   * Tests each commit to the `master` branch
