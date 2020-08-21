@@ -1,14 +1,24 @@
-# components
+<h1 align="center">simonknittel/components</h1>
 
-[![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/simonknittel/components?include_prereleases&style=flat-square)](https://github.com/simonknittel/components/releases)
-[![GitHub](https://img.shields.io/github/license/simonknittel/components?style=flat-square)](https://github.com/simonknittel/components/blob/master/LICENSE)
-[![David (path)](https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square)](https://github.com/simonknittel/components/blob/master/stencil/package.json)
-[![Chromatic (Visual Regression Testing)](https://img.shields.io/badge/visual%20regression%20testing-Chromatic-green?style=flat-square)](https://www.chromatic.com/builds?appId=5f2e5d00adfe5000223569a2&branch=master)
-[![Storybook](https://img.shields.io/badge/documentation-Storybook-green?style=flat-square)](https://simonknittel.github.io/components/)
+<div align="center">
+  <p><strong>This repository contains the interface component library for my <a href="https://github.com/simonknittel/homepage" title="link to the repo">personal website</a>.</strong></p>
 
-This repository contains the interface component library for my personal website ([link to repo](https://github.com/simonknittel/homepage)). Under the hood the library makes use of [Stencil](https://stenciljs.com) for Web Components.
+  <p>Under the hood the library makes use of <a href="https://stenciljs.com">Stencil</a> for Web Components.</p>
 
-**Disclaimer:** Like my personal website, this component library is still under heavy development, so regular breaking changes can be expected. This won't change until version 1.0 releases.
+  <a href="https://github.com/simonknittel/components/releases" title="Latest release v0.7.0">
+    <img src="https://img.shields.io/github/v/release/simonknittel/components?include_prereleases&style=flat-square" alt="Latest release v0.7.0">
+  </a>
+
+  <a href="https://github.com/simonknittel/components/blob/master/LICENSE" title="MIT License">
+    <img src="https://img.shields.io/github/license/simonknittel/components?style=flat-square" alt="MIT License">
+  </a>
+
+  <img src="https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square" alt="Badge for devDependencies">  
+</div>
+
+---
+
+_**Disclaimer:** Like my personal website, this component library is still under heavy development, so regular breaking changes can be expected. This won't change until version 1.0 releases._
 
 ## Links
 
