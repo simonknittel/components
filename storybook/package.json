@@ -15,7 +15,7 @@
     "@storybook/addons": "6.0.16",
     "@storybook/theming": "6.0.16",
     "@storybook/web-components": "6.0.16",
-    "@whitespace/storybook-addon-html": "2.0.0",
+    "@whitespace/storybook-addon-html": "4.0.2",
     "babel-loader": "8.1.0",
     "chromatic": "5.1.0",
     "lit-html": "1.3.0"
