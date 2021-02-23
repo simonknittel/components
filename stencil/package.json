@@ -23,7 +23,7 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@babel/core": "7.12.9",
+    "@babel/core": "7.12.10",
     "@stencil/core": "1.17.1",
     "@stencil/sass": "1.4.1"
   },
