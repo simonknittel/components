@@ -1,24 +1,11 @@
 /* global window */
 
 import {
-  configure,
-  addParameters,
-  setCustomElements,
-  addDecorator
+  configure
 } from '@storybook/web-components';
 
-import { withHTML } from '@whitespace/storybook-addon-html/html';
-addDecorator(withHTML);
 
-import customElements from '../../stencil/custom-elements.json';
-setCustomElements(customElements);
-
-addParameters({
-  docs: {
-    iframeHeight: '200px',
-  },
-});
-
+// Source: https://github.com/storybookjs/storybook/tree/master/app/web-components
 // force full reload to not reregister web components
 const req = require.context('../stories', true, /\.stories\.(js|mdx)$/);
 configure(req, module);

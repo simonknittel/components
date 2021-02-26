@@ -2,18 +2,20 @@
   "name": "@simonknittel/components",
   "version": "0.7.0",
   "description": "Component library for my personal website based on Web Components via Stencil",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
+
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "jsnext:main": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/components/components.js",
+  "unpkg": "dist/components/components.esm.js",
   "files": [
-    "dist/",
-    "loader/"
+    "dist/"
   ],
+
   "scripts": {
     "build": "stencil build --docs",
     "start:prod": "stencil build --docs --watch",
@@ -23,8 +25,8 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@babel/core": "7.12.9",
-    "@stencil/core": "1.17.1",
+    "@babel/core": "7.13.1",
+    "@stencil/core": "2.4.0",
     "@stencil/sass": "1.4.1"
   },
   "license": "MIT",
