@@ -13,16 +13,15 @@
 ## Build and publish a new version
 
 1. Stage and commit the latest changes
-2. Bump version of [stencil/package.json](./stencil/package.json) and [stencil/package-lock.json](./stencil/package-lock.json)
-3. Update CHANGELOG.md
-4. `git add -A && git commit -m 'Bump to vX.X.X' && git push`
-5. `git tag vX.X.X && git push --tags`
-6. Create a new [(pre-)release on GitHub](https://github.com/simonknittel/components/releases/new)
-7. `cd stencil`
-8. `npm run build`
-9. `npm publish`
-10. `cd ../`
-11. `sh update-gh-pages.sh`
+2. Update CHANGELOG.md
+3. Bump version of [core/package.json](./core/package.json) and recreate the package-lock.json
+4. `cd core && npm run build && npm publish`
+5. Bump version of `@simonknittel/components` in [react-bindings/package.json](./react-bindings/package.json)
+6. Bump version of [react-bindings/package.json](./react-bindings/package.json) and recreate the package-lock.json
+7. `cd ../react-bindings && npm run build && npm publish`
+8. `git add -A && git commit -m 'Bump to vX.X.X' && git push`
+9. `git tag vX.X.X && git push --tags`
+10. Create a new [(pre-)release on GitHub](https://github.com/simonknittel/components/releases/new)
 
 ## How to link your local project repository with a local copy of this repository
 
