@@ -1,8 +1,11 @@
 {
   "name": "@simonknittel/components",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Component library for my personal website based on Web Components via Stencil",
-
+  "author": {
+    "name": "Simon Knittel",
+    "url": "https://github.com/simonknittel"
+  },
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.js",
@@ -15,7 +18,6 @@
   "files": [
     "dist/"
   ],
-
   "scripts": {
     "build": "stencil build --docs",
     "start:prod": "stencil build --docs --watch",
@@ -32,6 +34,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simonknittel/components.git"
+    "url": "git+https://github.com/simonknittel/components.git",
+    "directory": "core"
   }
 }

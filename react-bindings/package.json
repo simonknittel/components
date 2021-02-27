@@ -1,0 +1,15 @@
+{
+  "name": "@simonknittel/components-react",
+  "version": "0.8.0",
+  "description": "React bindings of the component library for my personal website based on Web Components via Stencil",
+  "author": {
+    "name": "Simon Knittel",
+    "url": "https://github.com/simonknittel"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonknittel/components.git",
+    "package": "react-bindings"
+  }
+}

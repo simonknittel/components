@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/github/license/simonknittel/components?style=flat-square" alt="MIT License">
   </a>
 
-  <img src="https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square" alt="Badge for devDependencies">  
+  <img src="https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square" alt="Badge for devDependencies">
 
   <hr>
 
@@ -65,3 +65,5 @@ Linking a local copy of this component library with a local project repository w
 3. Open a terminal within your local project repository
 4. Run `npm link @simonknittel/components`
 5. The @simonknittel/components directory within node_modules of your local project repository is now linked via a symlink to your local copy of this repository
+
+TODO: <https://github.com/ionic-team/stencil-ds-plugins-demo>
