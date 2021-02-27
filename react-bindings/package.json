@@ -1,6 +1,6 @@
 {
   "name": "@simonknittel/components-react",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "React bindings of the component library for my personal website based on Web Components via Stencil",
   "author": {
     "name": "Simon Knittel",
@@ -33,7 +33,7 @@
     "typescript": "4.2.2"
   },
   "dependencies": {
-    "@simonknittel/components": "0.7.0"
+    "@simonknittel/components": "0.8.0"
   },
   "peerDependencies": {
     "react": "17.0.1",
