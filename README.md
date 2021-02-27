@@ -5,8 +5,8 @@
 
   <p>Under the hood the library makes use of <a href="https://stenciljs.com">Stencil</a> for Web Components.</p>
 
-  <a href="https://github.com/simonknittel/components/releases" title="Latest release v0.7.0">
-    <img src="https://img.shields.io/github/v/release/simonknittel/components?include_prereleases&style=flat-square" alt="Latest release v0.7.0">
+  <a href="https://github.com/simonknittel/components/releases" title="Latest release v0.8.0">
+    <img src="https://img.shields.io/github/v/release/simonknittel/components?include_prereleases&style=flat-square" alt="Latest release v0.8.0">
   </a>
 
   <a href="https://github.com/simonknittel/components/blob/master/LICENSE" title="MIT License">
@@ -29,6 +29,36 @@
   * Tests each commit to the `master` branch
 * [Components "live in action" on my personal website](https://nightly.simonknittel.de)
   * Uses the latest commit of the `master` branch
+
+## Usage
+
+### React
+
+Install `@simonknittel/components-react` as dependency:
+
+```sh
+npm install @simonknittel/components-react
+```
+
+Add this to your JavaScript entry point:
+
+```js
+import { applyPolyfills, defineCustomElements } from '@simonknittel/components/loader'
+
+applyPolyfills().then(() => {
+  defineCustomElements()
+})
+```
+
+Import components like this:
+
+```jsx
+import { SkBadge } from "@simonknittel/components-react"
+
+export default function MyReactComponent() {
+  return <SkBadge>Hello World!</SkBadge>
+}
+```
 
 ## Contributing
 
