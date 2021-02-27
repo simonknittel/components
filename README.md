@@ -33,5 +33,3 @@
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md)
-
-TODO: <https://github.com/ionic-team/stencil-ds-plugins-demo>
