@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:host {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.5;
+}
+a.color-yellow {
+  color: #ffcc00;
+}
+a.color-black {
+  color: #222;
+}
+a.color-light-black {
+  color: #444;
+}
+a.color-white {
+  color: #fff5cc;
+}
+a.icon-position-right .text {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.text {
+  display: inline-block;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
