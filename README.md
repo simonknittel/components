@@ -13,8 +13,6 @@
     <img src="https://img.shields.io/github/license/simonknittel/components?style=flat-square" alt="MIT License">
   </a>
 
-  <img src="https://img.shields.io/david/dev/simonknittel/components?path=stencil&style=flat-square" alt="Badge for devDependencies">
-
   <hr>
 
   <p><em><strong>Disclaimer:</strong> Like my personal website, this component library is still under heavy development, so regular breaking changes can be expected. This won't change until version 1.0 releases.</em></p>
