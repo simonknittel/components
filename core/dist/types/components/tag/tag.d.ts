@@ -1,4 +1,4 @@
 export declare class Tag {
-  description: string;
+  description?: string;
   render(): any;
 }

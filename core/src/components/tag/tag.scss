@@ -8,6 +8,16 @@
 
 :host {
   display: inline-block;
+}
+
+:host(:hover) {
+  .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wrapper {
   position: relative;
   padding: .3rem .5rem .3rem .5rem;
   border-radius: $border-radius;
@@ -22,19 +32,15 @@
     opacity: .5;
     margin-right: .25em;
   }
-}
 
-:host(:hover) {
-  cursor: help;
-
-  .tooltip {
-    opacity: 1;
-    transform: translateY(0);
+  &.has-description {
+    cursor: help;
   }
 }
 
-sk-typography {
+.content {
   display: inline-flex;
+  hyphens: auto;
 }
 
 .tooltip {

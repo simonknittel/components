@@ -54,7 +54,7 @@ export namespace Components {
         "titleAttr": string;
     }
     interface SkTag {
-        "description": string;
+        "description"?: string;
     }
     interface SkTypography {
         "as": string;

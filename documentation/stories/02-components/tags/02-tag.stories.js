@@ -32,7 +32,7 @@ playground.args = {
 
 export function onBlack(args) {
   const component = tagToElement('sk-tag', args)
-  component.style = '--sk-tag-border-color: rgba(#fc0, .5); --sk-tag-color: #fc0'
+  component.style = '--sk-tag-border-color: rgba(#fc0, .5); --sk-tag-color: #fc0; --sk-tag-tooltip-background-color: #fc0; --sk-tag-tooltip-color: #222;'
   return component
 }
 
