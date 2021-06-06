@@ -1,6 +1,6 @@
 {
   "name": "@simonknittel/components",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Component library for my personal website based on Web Components via Stencil",
   "author": {
     "name": "Simon Knittel",
