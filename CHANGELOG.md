@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.8.2 (06.06.2021)
+
+* Fix overflowing content of new tooltip
+
 ## v0.8.1 (06.06.2021)
 
 * Update description/tooltip to `sk-tag`

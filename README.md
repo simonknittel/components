@@ -5,8 +5,8 @@
 
   <p>Under the hood the library makes use of <a href="https://stenciljs.com">Stencil</a> for Web Components.</p>
 
-  <a href="https://github.com/simonknittel/components/releases" title="Latest release v0.8.1">
-    <img src="https://img.shields.io/github/v/release/simonknittel/components?include_prereleases&style=flat-square" alt="Latest release v0.8.1">
+  <a href="https://github.com/simonknittel/components/releases" title="Latest release v0.8.2">
+    <img src="https://img.shields.io/github/v/release/simonknittel/components?include_prereleases&style=flat-square" alt="Latest release v0.8.2">
   </a>
 
   <a href="https://github.com/simonknittel/components/blob/master/LICENSE" title="MIT License">
