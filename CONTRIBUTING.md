@@ -2,12 +2,12 @@
 
 ## Build and watch components with Stencil
 
-    cd stencil
+    cd core
     npm start
 
 ## Build, watch and serve stories with Storybook
 
-    cd storybook
+    cd documentation
     npm start
 
 ## Build and publish a new version

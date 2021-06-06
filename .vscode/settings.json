@@ -1,0 +1,6 @@
+{
+  "sonarlint.connectedMode.project": {
+    "connectionId": "sonarcloud.io",
+    "projectKey": "simonknittel_components"
+  }
+}
