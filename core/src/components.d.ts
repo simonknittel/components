@@ -54,6 +54,7 @@ export namespace Components {
         "titleAttr": string;
     }
     interface SkTag {
+        "description": string;
     }
     interface SkTypography {
         "as": string;
@@ -179,6 +180,7 @@ declare namespace LocalJSX {
         "titleAttr"?: string;
     }
     interface SkTag {
+        "description"?: string;
     }
     interface SkTypography {
         "as"?: string;

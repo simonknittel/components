@@ -8,6 +8,7 @@
 
 :host {
   display: inline-block;
+  position: relative;
   padding: .3rem .5rem .3rem .5rem;
   border-radius: $border-radius;
   border-width: 1px;
@@ -23,6 +24,30 @@
   }
 }
 
+:host(:hover) {
+  cursor: help;
+
+  .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 sk-typography {
   display: inline-flex;
+}
+
+.tooltip {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: calc(100% + .5rem);
+  transform: translateY(1rem);
+  padding: .3rem .5rem .3rem .5rem;
+  border-radius: $border-radius;
+  background-color: var(--sk-tag-tooltip-background-color, $black);
+  color: var(--sk-tag-tooltip-color, $white);
+  transition: opacity .25s, transform .25s;
 }

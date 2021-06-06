@@ -32,4 +32,4 @@ Linking a local copy of this component library with a local project repository w
 2. Run `npm link`
 3. Open a terminal within your local project repository
 4. Run `npm link @simonknittel/components`
-5. The @simonknittel/components directory within node_modules of your local project repository is now linked via a symlink to your local copy of this repository
+5. The `@simonknittel/components` directory within `node_modules` of your local project repository is now linked via a symlink to your local copy of this repository

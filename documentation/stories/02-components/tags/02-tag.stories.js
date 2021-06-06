@@ -4,7 +4,8 @@ export default {
   title: 'Components/Tags/sk-tag',
   component: 'sk-tag',
   argTypes: {
-    innerHTML: { control: 'text' }
+    innerHTML: { control: 'text' },
+    description: { control: 'text' },
   },
 }
 
@@ -26,6 +27,7 @@ playground.story = {
 
 playground.args = {
   innerHTML: 'Lorem ipsum',
+  description: 'In commodo cillum commodo eu occaecat.',
 }
 
 export function onBlack(args) {
@@ -47,4 +49,5 @@ onBlack.story = {
 
 onBlack.args = {
   innerHTML: 'Lorem ipsum',
+  description: 'In commodo cillum commodo eu occaecat.',
 }
